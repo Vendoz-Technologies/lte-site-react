@@ -8,12 +8,12 @@ import FooterFour from "./footers/footer-4";
 import Wrapper from "./wrapper";
 
 export {
-    Header,
-    HeaderTwo,
-    HeaderThree,
-    Footer,
-    FooterTwo,
-    FooterThree,
-    FooterFour,
-    Wrapper
-}
+  Header,
+  HeaderTwo,
+  HeaderThree,
+  Footer,
+  FooterTwo,
+  FooterThree,
+  FooterFour,
+  Wrapper,
+};

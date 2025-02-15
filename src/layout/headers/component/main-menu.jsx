@@ -30,9 +30,30 @@ const MainMenu = () => {
                   <h6 className="menu-title">{nav.title}</h6>
                   <ul className="submenu mega-sub-menu-01">
                     {nav.mega_submenu.map((m, i) => (
-                      <li key={i}>
-                        <Link href={`${m.link}`}>{m.title}</Link>
-                      </li>
+                      <>
+                        <li key={i}>
+                          <Link href={`${m.link}`}>
+                            {m.title}
+                            {m?.hot && <span className="badge-1">hot</span>}
+                            {m?.new && <span className="badge">new</span>}
+                          </Link>
+                          <ul>
+                            {m.submenus?.map((nav, i) => (
+                              <li key={i}>
+                                <Link href={`${nav.link}`}>
+                                  {nav.title}
+                                  {nav?.hot && (
+                                    <span className="badge-1">hot</span>
+                                  )}
+                                  {nav?.new && (
+                                    <span className="badge">new</span>
+                                  )}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
+                      </>
                     ))}
                   </ul>
                 </li>

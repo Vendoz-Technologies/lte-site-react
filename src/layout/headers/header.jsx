@@ -1,17 +1,17 @@
-import React, { useState } from "react";
 import Link from "next/link";
-import { useSelector } from "react-redux";
-import MainMenu from "../headers/component/main-menu";
-import HeaderTopRight from "../headers/component/header-top-right";
-import HeaderTopLeft from "../headers/component/header-top-left";
+import React, { useState } from "react";
 import SearchPopup from "../../components/common/popup-modal/search-popup";
-import useSticky from "../../hooks/use-sticky";
-import { wishlistItems } from "../../redux/features/wishlist-slice";
-import useCartInfo from "../../hooks/use-cart-info";
 import OffCanvas from "../../components/common/sidebar/off-canvas";
-import Cart from "./component/cart";
+import useSticky from "../../hooks/use-sticky";
+import HeaderTopLeft from "../headers/component/header-top-left";
+import HeaderTopRight from "../headers/component/header-top-right";
+import MainMenu from "../headers/component/main-menu";
 
 const categories = [
+  {
+    link: "/courses",
+    title: "Overseas Education & Career Opportunities",
+  },
   { link: "/courses", title: "Business & Management Training" },
   { link: "/courses", title: "Marketing & Digital Skills" },
   { link: "/courses", title: "Technology & Software Training" },
@@ -20,21 +20,10 @@ const categories = [
     link: "/courses",
     title: "Microsoft Office Training & Certification",
   },
-  {
-    link: "/courses",
-    title: "Overseas Education & Career Opportunities",
-  },
 ];
 
-const Header = ({
-  header_style,
-  no_top_bar,
-  disable_full_width,
-  disable_category,
-}) => {
+const Header = ({ header_style, no_top_bar, disable_full_width }) => {
   const { sticky } = useSticky();
-  const { quantity } = useCartInfo();
-  const wishlists = useSelector(wishlistItems);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,6 +50,7 @@ const Header = ({
             </div>
           </div>
         )}
+
         <div id="edu-sticky-placeholder"></div>
         <div className={`header-mainmenu ${sticky ? "edu-sticky" : ""}`}>
           <div className="container-fluid">
@@ -82,35 +72,10 @@ const Header = ({
                     />
                   </Link>
                 </div>
-
-                {!disable_category && (
-                  <div className="header-category">
-                    <nav className="mainmenu-nav">
-                      <ul className="mainmenu">
-                        <li className="has-droupdown">
-                          <a href="#">
-                            <i className="icon-1"></i>Category
-                          </a>
-                          <ul className="submenu">
-                            {categories.map((category, i) => (
-                              <li key={i}>
-                                <Link href={`${category.link}`}>
-                                  {category.title}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                )}
               </div>
               <div className="header-mainnav">
                 <nav className="mainmenu-nav">
-                  {/* main menu start */}
                   <MainMenu />
-                  {/* main menu end */}
                 </nav>
               </div>
               <div className="header-right">
@@ -127,34 +92,6 @@ const Header = ({
                       </button>
                     </div>
                   </li>
-                  {/* <li className="icon search-icon">
-                    <a
-                      style={{ cursor: "pointer" }}
-                      onClick={() => setIsSearchOpen(true)}
-                      className="search-trigger"
-                    >
-                      <i className="icon-2"></i>
-                    </a>
-                  </li>
-                  <li className="icon">
-                    <Link href="/wishlist" className="wishlist">
-                      <i className="icon-22"></i>
-                      <span className="count">{wishlists?.length}</span>
-                    </Link>
-                  </li>
-                  <li className="icon cart-icon">
-                    <Link href="/cart" className="cart-icon">
-                      <i className="icon-3"></i>
-                      <span className="count">{quantity}</span>
-                    </Link>
-                    <Cart />
-                  </li>
-                  <li className="header-btn">
-                    <Link href="/contact-us" className="edu-btn btn-medium">
-                      Try for free
-                      <i className="icon-4"></i>
-                    </Link>
-                  </li> */}
                   <li className="mobile-menu-bar d-block d-xl-none">
                     <button
                       className="hamberger-button"
@@ -169,16 +106,12 @@ const Header = ({
           </div>
         </div>
 
-        {/* <!-- Start Search Popup  --> */}
         <SearchPopup
           isSearchOpen={isSearchOpen}
           setIsSearchOpen={setIsSearchOpen}
         />
-        {/* <!-- End Search Popup  --> */}
       </header>
-      {/* sidebar start */}
       <OffCanvas isOpen={isOpen} setIsOpen={setIsOpen} />
-      {/* sidebar end */}
     </>
   );
 };
