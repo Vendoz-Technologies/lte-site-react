@@ -7,21 +7,6 @@ import HeaderTopLeft from "../headers/component/header-top-left";
 import HeaderTopRight from "../headers/component/header-top-right";
 import MainMenu from "../headers/component/main-menu";
 
-const categories = [
-  {
-    link: "/courses",
-    title: "Overseas Education & Career Opportunities",
-  },
-  { link: "/courses", title: "Business & Management Training" },
-  { link: "/courses", title: "Marketing & Digital Skills" },
-  { link: "/courses", title: "Technology & Software Training" },
-  { link: "/courses", title: "Data Analytics & Business Tools" },
-  {
-    link: "/courses",
-    title: "Microsoft Office Training & Certification",
-  },
-];
-
 const Header = ({ header_style, no_top_bar, disable_full_width }) => {
   const { sticky } = useSticky();
   const [isSearchOpen, setIsSearchOpen] = useState(false);

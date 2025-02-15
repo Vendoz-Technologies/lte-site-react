@@ -1,47 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { cart_course } from "../../redux/features/cart-slice";
-import {
-  add_to_wishlist,
-  wishlistItems,
-} from "../../redux/features/wishlist-slice";
 
 const CourseTypeOne = ({ data, classes, image_location_path = "01" }) => {
-  const dispatch = useDispatch();
-  const wishlists = useSelector(wishlistItems);
-  const isWishlistSelected = wishlists.find(
-    (w) => Number(w.id) === Number(data.id)
-  );
-
-  const handleWishlist = (course_item) => {
-    if (wishlists.find((i) => i.id === course_item.id)) {
-      dispatch(
-        add_to_wishlist({
-          change_type: "remove_wishlist",
-          item: {
-            id: course_item.id,
-            img: `/assets/images/course/course-06/${course_item.img}`,
-            title: course_item.title,
-            price: course_item.course_price,
-          },
-        })
-      );
-    } else {
-      dispatch(
-        add_to_wishlist({
-          change_type: "add_wishlist",
-          item: {
-            id: course_item.id,
-            img: `/assets/images/course/course-06/${course_item.img}`,
-            title: course_item.title,
-            price: course_item.course_price,
-          },
-        })
-      );
-    }
-  };
-
   return (
     <div
       className={`edu-course course-style-1 ${
@@ -93,14 +53,7 @@ const CourseTypeOne = ({ data, classes, image_location_path = "01" }) => {
           </ul>
         </div>
       </div>
-      <div className="course-hover-content-wrapper">
-        <button
-          onClick={() => handleWishlist(data)}
-          className={`wishlist-btn ${isWishlistSelected ? "active" : ""}`}
-        >
-          <i className="icon-22"></i>
-        </button>
-      </div>
+
       <div className="course-hover-content">
         <div className="content">
           {/* <button

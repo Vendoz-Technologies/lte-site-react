@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { toKebabCase } from "../../../utils/convertion-utils";
 
 const category_contents = {
   title: "Top Categories",
@@ -76,7 +77,7 @@ const TopCategories = () => {
                   <i className={item.icon}></i>
                 </div>
                 <div className="content">
-                  <Link href="/courses">
+                  <Link href={`/categories/${toKebabCase(item.title)}`}>
                     <h5 className="title">{item.title}</h5>
                   </Link>
                 </div>

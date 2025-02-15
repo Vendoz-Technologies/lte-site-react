@@ -43,6 +43,7 @@ const WhyChose = () => {
         <div className="row g-5">
           {whyChooseUsData.map((data, i) => (
             <ChoseBox
+              key={i}
               color="color-primary-style"
               icon={45 + i}
               title={data.title}

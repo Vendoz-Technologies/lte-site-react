@@ -1,49 +1,57 @@
-import { createContext, useCallback, useContext, useMemo, useState, useEffect } from 'react';
-export const MouseMoveContext = createContext( {} );
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+  useEffect,
+} from "react";
 
-export const MouseMoveProvider = ( { children } ) => {
-    const [currentPosition, setCurrentPosition] = useState( { x: 0, y: 0 } );
-    const whileMouseMove = useCallback( ( e ) => {
-        setCurrentPosition( {
-            x: e.clientX - window.innerWidth / 2,
-            y: e.clientY - window.innerHeight / 2
-        } );
-    }, [] );
+const MouseMoveContext = createContext({});
 
-    const mouseDirection = useMemo( () => {
-        return ( main = 20 ) => ( {
-            x: currentPosition.x / main,
-            y: currentPosition.y / main
-        } )
-    }, [currentPosition] );
+export const MouseMoveProvider = ({ children }) => {
+  const [currentPosition, setCurrentPosition] = useState({ x: 0, y: 0 });
+  const whileMouseMove = useCallback((e) => {
+    setCurrentPosition({
+      x: e.clientX - window.innerWidth / 2,
+      y: e.clientY - window.innerHeight / 2,
+    });
+  }, []);
 
-    const mouseReverse = useMemo( () => {
-        return ( main = 20 ) => ( {
-            x: ( currentPosition.x / main ) * -1,
-            y: ( currentPosition.y / main ) * -1
-        } );
-    }, [currentPosition] );
+  const mouseDirection = useMemo(() => {
+    return (main = 20) => ({
+      x: currentPosition.x / main,
+      y: currentPosition.y / main,
+    });
+  }, [currentPosition]);
 
-    useEffect( () => {
-        window.addEventListener( 'mousemove', whileMouseMove );
-        return () => {
-            window.removeEventListener( 'mousemove', whileMouseMove );
-        }
-    }, [whileMouseMove] );
+  const mouseReverse = useMemo(() => {
+    return (main = 20) => ({
+      x: (currentPosition.x / main) * -1,
+      y: (currentPosition.y / main) * -1,
+    });
+  }, [currentPosition]);
 
-    const param = useMemo(
-        () => ( {
-            mouseDirection,
-            mouseReverse
-        } ),
-        [mouseDirection, mouseReverse]
-    );
+  useEffect(() => {
+    window.addEventListener("mousemove", whileMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", whileMouseMove);
+    };
+  }, [whileMouseMove]);
 
-    return (
-        <MouseMoveContext.Provider value={ param }>
-            { children }
-        </MouseMoveContext.Provider>
-    )
+  const param = useMemo(
+    () => ({
+      mouseDirection,
+      mouseReverse,
+    }),
+    [mouseDirection, mouseReverse]
+  );
+
+  return (
+    <MouseMoveContext.Provider value={param}>
+      {children}
+    </MouseMoveContext.Provider>
+  );
 };
 
-export const useMouseMoveUI = () => useContext( MouseMoveContext );
+export const useMouseMoveUI = () => useContext(MouseMoveContext);

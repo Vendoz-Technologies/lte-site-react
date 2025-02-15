@@ -51,7 +51,7 @@ const menu_data = [
   },
   {
     title: "Blogs / Resources",
-    link: "/blog",
+    link: "/blogs",
     mega_menu: false,
   },
   {
