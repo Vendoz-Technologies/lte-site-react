@@ -8,7 +8,7 @@ const sm_blogs = blog_items.filter(blog => !blog.large)
 
 const BlogArea = () => {
     return (
-        <div className="edu-blog-area blog-area-3 edu-section-gap">
+        (<div className="edu-blog-area blog-area-3 edu-section-gap">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="50" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Latest Articles</span>
@@ -21,9 +21,9 @@ const BlogArea = () => {
                             <div className="inner">
                                 <div className="thumbnail">
                                     <Link href={`/blog-details/${large_blog.id}`}>
-                                        <a>
-                                            <img src={large_blog.img} alt="Blog Images" />
-                                        </a>
+
+                                        <img src={large_blog.img} alt="Blog Images" />
+
                                     </Link>
                                 </div>
                                 <div className="content">
@@ -32,13 +32,13 @@ const BlogArea = () => {
                                         <span className="month">{large_blog.date.split(' ')[0]}</span>
                                     </div>
                                     <div className="category-wrap">
-                                        <Link href={`/blog-details/${large_blog.id}`}>
-                                            <a className="blog-category">{large_blog.category}</a>
+                                        <Link href={`/blog-details/${large_blog.id}`} className="blog-category">
+                                            {large_blog.category}
                                         </Link>
                                     </div>
                                     <h4 className="title">
                                         <Link href={`/blog-details/${large_blog.id}`}>
-                                            <a>{large_blog.title}</a>
+                                            {large_blog.title}
                                         </Link>
                                     </h4>
                                     <p>Lorem ipsum dolor sit amet consec tetur adipisicing sed eiusmod tempor incid idunt labore.</p>
@@ -55,13 +55,13 @@ const BlogArea = () => {
                         {sm_blogs.map((blog) => {
                             const { id, img, date, category, title, author, comment } = blog;
                             return (
-                                <div key={id} className="edu-blog blog-style-2">
+                                (<div key={id} className="edu-blog blog-style-2">
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/blog-details/${id}`}>
-                                                <a>
+
                                                 <img src={img} alt="Blog Images" />
-                                                </a>
+
                                             </Link>
                                             <div className="blog-date">
                                                 <span className="day">{date.split(' ')[1]}</span>
@@ -70,13 +70,13 @@ const BlogArea = () => {
                                         </div>
                                         <div className="content">
                                             <div className="category-wrap">
-                                                <Link href={`/blog-details/${id}`}>
-                                                <a className="blog-category">{category}</a>
+                                                <Link href={`/blog-details/${id}`} className="blog-category">
+                                                {category}
                                                 </Link>
                                             </div>
                                             <h5 className="title">
                                                 <Link href={`/blog-details/${id}`}>
-                                                <a>{title}</a>
+                                                {title}
                                                 </Link>
                                             </h5>
                                             <ul className="blog-meta">
@@ -85,14 +85,14 @@ const BlogArea = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                            )
+                                </div>)
+                            );
                         })}
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BlogArea;

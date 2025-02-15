@@ -10,7 +10,7 @@ const events = event_data.filter(event => event.health_coach_event);
 const EventArea = ({ event_2 }) => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-event-area event-area-4 section-gap-equal">
+        (<div className="edu-event-area event-area-4 section-gap-equal">
             <div className="container edublink-animated-shape">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Events & News</span>
@@ -32,8 +32,8 @@ const EventArea = ({ event_2 }) => {
                 </div>
 
                 <div className="event-view-all-btn" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                    <h6 className="view-text">The Latest Events from LTE. <Link href="/event-grid">
-                        <a className="btn-transparent">View All <i className="icon-4"></i></a>
+                    <h6 className="view-text">The Latest Events from LTE. <Link href="/event-grid" className="btn-transparent">
+                        View All <i className="icon-4"></i>
                     </Link>
                     </h6>
                 </div>
@@ -52,8 +52,8 @@ const EventArea = ({ event_2 }) => {
                     </motion.li>
                 </ul>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default EventArea;

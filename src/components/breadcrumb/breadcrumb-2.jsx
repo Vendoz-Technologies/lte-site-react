@@ -3,13 +3,13 @@ import React from 'react';
 
 const BreadcrumbTwo = ({ subtitle }) => {
     return (
-        <div className="edu-breadcrumb-area breadcrumb-style-5">
+        (<div className="edu-breadcrumb-area breadcrumb-style-5">
             <div className="container">
                 <div className="breadcrumb-inner">
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                                <a>Home</a>
+                                Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -19,8 +19,8 @@ const BreadcrumbTwo = ({ subtitle }) => {
                     </ul>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BreadcrumbTwo;

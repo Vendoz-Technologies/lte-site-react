@@ -6,7 +6,7 @@ import { useMouseMoveUI } from '../../contexts/mouse-move-context';
 const ShopSupport = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="pv-shop-area bg-image">
+        (<div className="pv-shop-area bg-image">
             <div className="wrapper">
                 <div className="container-custom-1520">
                     <div className="row align-items-center">
@@ -20,10 +20,9 @@ const ShopSupport = () => {
                                     <p data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000">E-commerce. LTE provides all the tools you need to start selling online. Let your customers to experience E-commerce at its absolute-best.</p>
 
                                     <div data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                        <Link href="/course-style-1">
-                                            <a className="edu-btn" target="_blank">
-                                                View Course Buy/Sell <i className="icon-4"></i>
-                                            </a>
+                                        <Link href="/course-style-1" className="edu-btn" target="_blank">
+                                            View Course Buy/Sell <i className="icon-4"></i>
+
                                         </Link>
                                     </div>
                                 </div>
@@ -73,8 +72,8 @@ const ShopSupport = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default ShopSupport;

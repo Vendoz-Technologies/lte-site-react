@@ -6,7 +6,7 @@ import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 const AboutArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-about-area about-style-6">
+        (<div className="edu-about-area about-style-6">
             <div className="container">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-6">
@@ -60,15 +60,20 @@ const AboutArea = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="/contact-us">
-                                <a className="edu-btn btn-curved" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Get Start Today <i className="icon-4"></i></a>
+                            <Link
+                                href="/contact-us"
+                                className="edu-btn btn-curved"
+                                data-sal-delay="150"
+                                data-sal="slide-up"
+                                data-sal-duration="800">
+                                Get Start Today <i className="icon-4"></i>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default AboutArea;

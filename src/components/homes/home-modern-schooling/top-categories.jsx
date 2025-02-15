@@ -3,22 +3,22 @@ import React from 'react';
 
 function Category({ delay, color, icon, icon_class, title, course }) {
     return (
-        <div className="col-lg-4 col-md-6" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
+        (<div className="col-lg-4 col-md-6" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
             <div className={`categorie-grid categorie-style-4 ${color} edublink-svg-animate`}>
                 <div className="icon">
                     <i className={`${icon} ${icon_class ? icon_class : ''}`}></i>
                 </div>
                 <div className="content">
                     <Link href="/course-style-1">
-                        <a>
-                            <h5 className="title">{title}</h5>
-                        </a>
+
+                        <h5 className="title">{title}</h5>
+
                     </Link>
                     <span className="course-count">{course} Courses</span>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 const TopCategories = () => {

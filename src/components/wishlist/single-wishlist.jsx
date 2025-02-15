@@ -13,7 +13,7 @@ const SingleWishlist = ({ item }) => {
     }
 
     return (
-        <tr>
+        (<tr>
             <td className="product-remove">
                 <a style={{ cursor: 'pointer' }} onClick={() => dispatch(remove_wishlist_product(item))}
                 className="remove-wishlist">
@@ -22,14 +22,14 @@ const SingleWishlist = ({ item }) => {
             </td>
             <td className="product-thumbnail">
                 <Link href={`/course-details/${item.id}`}>
-                <a>
+
                     <img src={item.img} alt="Books" />
-                </a>
+
                 </Link>
             </td>
             <td className="product-title">
                 <Link href={`/course-details/${item.id}`}>
-                    <a>{item.title}</a>
+                    {item.title}
                 </Link>
             </td>
             <td className="product-price" data-title="Price">
@@ -41,8 +41,8 @@ const SingleWishlist = ({ item }) => {
                     {cartCourses.some(course => course.id === item.id) ? 'Added to cart' : 'Add to cart'}
                 </a>
             </td>
-        </tr>
-    )
+        </tr>)
+    );
 }
 
 export default SingleWishlist;

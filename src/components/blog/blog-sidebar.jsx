@@ -6,7 +6,7 @@ const latest_blog = blog_data.slice(0, 3);
 
 const BlogSidebar = () => {
     return (
-        <div className="edu-blog-sidebar">
+        (<div className="edu-blog-sidebar">
             <div className="edu-blog-widget widget-search">
                 <div className="inner">
                     <h4 className="widget-title">Search</h4>
@@ -18,7 +18,6 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
-
             <div className="edu-blog-widget widget-latest-post">
                 <div className="inner">
                     <h4 className="widget-title">Latest Post</h4>
@@ -27,15 +26,15 @@ const BlogSidebar = () => {
                             <div key={blog.id} className="latest-post">
                                 <div className="thumbnail">
                                     <Link href={`/blog-details/${blog.id}`}>
-                                        <a>
-                                            <img src={blog.img} alt="Blog Images" />
-                                        </a>
+
+                                        <img src={blog.img} alt="Blog Images" />
+
                                     </Link>
                                 </div>
                                 <div className="post-content">
                                     <h6 className="title">
                                         <Link href={`/blog-details/${blog.id}`}>
-                                            <a>{blog.title.substring(0, 25)}...</a>
+                                            {blog.title.substring(0, 25)}...
                                         </Link>
                                     </h6>
                                     <ul className="blog-meta">
@@ -47,7 +46,6 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
-
             <div className="edu-blog-widget widget-categories">
                 <div className="inner">
                     <h4 className="widget-title">Categories</h4>
@@ -63,7 +61,6 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
-
             <div className="edu-blog-widget widget-action">
                 <div className="inner">
                     <h4 className="title">Get Online Courses From <span>LTE</span></h4>
@@ -72,7 +69,6 @@ const BlogSidebar = () => {
                     <a href="#" className="edu-btn btn-medium">Start Now <i className="icon-4"></i></a>
                 </div>
             </div>
-
             <div className="edu-blog-widget widget-categories">
                 <div className="inner">
                     <h4 className="widget-title">Archives</h4>
@@ -87,7 +83,6 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
-
             <div className="edu-blog-widget widget-tags">
                 <div className="inner">
                     <h4 className="widget-title">Tags</h4>
@@ -102,8 +97,8 @@ const BlogSidebar = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BlogSidebar;

@@ -45,13 +45,13 @@ const CourseTypeOne = ({ data, classes, image_location_path='01' }) => {
     }
 
     return (
-        <div className={`edu-course course-style-1 ${ classes ? classes : '' } hover-button-bg-white`}>
+        (<div className={`edu-course course-style-1 ${ classes ? classes : '' } hover-button-bg-white`}>
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
-                        <a>
-                            <img src={`/assets/images/course/course-${image_location_path}/${data.img}`} alt="Course Meta" />
-                        </a>
+
+                        <img src={`/assets/images/course/course-${image_location_path}/${data.img}`} alt="Course Meta" />
+
                     </Link>
                     <div className="time-top">
                         <span className="duration"><i className="icon-61"></i>{data.duration}</span>
@@ -79,11 +79,9 @@ const CourseTypeOne = ({ data, classes, image_location_path='01' }) => {
                     </ul>
                 </div>
             </div>
-
             <div className="course-hover-content-wrapper">
                 <button onClick={() => handleWishlist(data)} className={`wishlist-btn ${isWishlistSelected ? 'active' : ''}`}><i className="icon-22"></i></button>
             </div>
-            
             <div className="course-hover-content">
                 <div className="content">
                     <button onClick={() => handleWishlist(data)} className={`wishlist-btn ${isWishlistSelected ? 'active' : ''}`}>
@@ -92,7 +90,7 @@ const CourseTypeOne = ({ data, classes, image_location_path='01' }) => {
                     <span className="course-level">{data.level}</span>
                         <h6 className="title">
                             <Link href={`/course-details/${data.id}`}>
-                                <a>{data.title}</a>
+                                {data.title}
                             </Link>
                         </h6>
                     <div className="course-rating">
@@ -117,8 +115,8 @@ const CourseTypeOne = ({ data, classes, image_location_path='01' }) => {
                     </a>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CourseTypeOne;

@@ -18,15 +18,15 @@ const social_share = [
 
 const HeaderTopRight = () => {
   return (
-    <ul className="header-info">
+    (<ul className="header-info">
       <li>
         <Link href="/sign-in">
-          <a>Login</a>
+          Login
         </Link>
       </li>
       <li>
         <Link href="/sign-in">
-          <a>Register</a>
+          Register
         </Link>
       </li>
       <li>
@@ -55,7 +55,7 @@ const HeaderTopRight = () => {
           </a>
         ))}
       </li>
-    </ul>
+    </ul>)
   );
 };
 

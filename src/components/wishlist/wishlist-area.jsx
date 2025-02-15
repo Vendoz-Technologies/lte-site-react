@@ -6,13 +6,13 @@ import SingleWishlist from './single-wishlist';
 const WishlistArea = () => {
     const { wishlist } = useSelector(state => state.wishlist);
     return (
-        <section className="cart-page-area edu-section-gap">
+        (<section className="cart-page-area edu-section-gap">
             {wishlist.length === 0 && 
                 <div className="container">
                     <div className="text-center">
                         <h3>No Wishlist Product</h3>
-                        <Link href="/course-style-1">
-                        <a className="edu-btn btn-medium">Return to courses</a>
+                        <Link href="/course-style-1" className="edu-btn btn-medium">
+                        Return to courses
                         </Link>
                     </div>
                 </div>
@@ -38,8 +38,8 @@ const WishlistArea = () => {
                     </div>
                 </div>
             }
-        </section>
-    )
+        </section>)
+    );
 }
 
 export default WishlistArea;

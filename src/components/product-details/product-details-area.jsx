@@ -3,7 +3,7 @@ import React from 'react';
 
 const ProductDetailsArea = ({ item }) => {
     return (
-        <div className="product-details-area gap-top-equal">
+        (<div className="product-details-area gap-top-equal">
             <div className="container">
                 <div className="row g-5 row--25">
                     <div className="col-lg-6">
@@ -35,8 +35,8 @@ const ProductDetailsArea = ({ item }) => {
                                 </div>
 
                                 <div className="add-to-cart-btn">
-                                    <Link href="/cart">
-                                        <a className="edu-btn btn-medium">Add To Cart</a>
+                                    <Link href="/cart" className="edu-btn btn-medium">
+                                        Add To Cart
                                     </Link>
                                     <a href="#" className="wishlist-btn"><i className="icon-22"></i></a>
                                 </div>
@@ -51,8 +51,8 @@ const ProductDetailsArea = ({ item }) => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default ProductDetailsArea;

@@ -3,21 +3,21 @@ import React from 'react';
 
 function Category({ delay, color, icon, icon_name, title }) {
     return (
-        <div className="col" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
+        (<div className="col" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
             <div className={`categorie-grid categorie-style-3 ${color}`}>
                 <div className={`icon ${icon_name ? icon_name : ''}`}>
                     <i className={icon}></i>
                 </div>
                 <div className="content">
                     <Link href="/course-style-1">
-                        <a>
-                            <h5 className="title">{title}</h5>
-                        </a>
+
+                        <h5 className="title">{title}</h5>
+
                     </Link>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 const Categories = () => {

@@ -45,13 +45,13 @@ const CourseTypeFour = ({ data, classes }) => {
     }
 
     return (
-        <div className={`edu-course course-style-5 ${ classes ? classes : '' }`}>
+        (<div className={`edu-course course-style-5 ${ classes ? classes : '' }`}>
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
-                        <a>
-                            <img src={`/assets/images/course/course-04/${data.img}`} alt="Course Meta" />
-                        </a>
+
+                        <img src={`/assets/images/course/course-04/${data.img}`} alt="Course Meta" />
+
                     </Link>
                 </div>
                 <div className="content">
@@ -59,7 +59,7 @@ const CourseTypeFour = ({ data, classes }) => {
                     <span className="course-level">{data.level}</span>
                     <h5 className="title">
                         <Link href={`/course-details/${data.id}`}>
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h5>
                     <div className="course-rating">
@@ -79,7 +79,6 @@ const CourseTypeFour = ({ data, classes }) => {
                     </ul>
                 </div>
             </div>
-            
             <div className="hover-content-aside">
                 <div className="content">
                     <span className="course-level">{ data.category }</span>
@@ -122,8 +121,8 @@ const CourseTypeFour = ({ data, classes }) => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CourseTypeFour;

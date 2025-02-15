@@ -6,7 +6,7 @@ import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 const AdBanner = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="modern-schooling-cta-wrapper edu-cta-banner-area-6 bg-image">
+        (<div className="modern-schooling-cta-wrapper edu-cta-banner-area-6 bg-image">
             <div className="container">
                 <div className="edu-cta-banner">
                     <div className="row justify-content-center">
@@ -47,8 +47,8 @@ const AdBanner = () => {
                         <div className="col-lg-6">
                             <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <h2 className="title">Get Your Quality <br /> Skills Certificate Through <br /> LTE </h2>
-                                <Link href="/contact-us">
-                                    <a className="edu-btn btn-secondary">Get started now <i className="icon-4"></i></a>
+                                <Link href="/contact-us" className="edu-btn btn-secondary">
+                                    Get started now <i className="icon-4"></i>
                                 </Link>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ const AdBanner = () => {
                     </ul>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default AdBanner;

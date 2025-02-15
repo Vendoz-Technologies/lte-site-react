@@ -8,7 +8,7 @@ const blog_items = blog_data.filter((blog) => blog.blog_masonry);
 
 const BlogMasonryArea = () => {
   return (
-    <section className="section-gap-equal">
+    (<section className="section-gap-equal">
       <div className="container">
         <div
           className="g-5"
@@ -22,23 +22,23 @@ const BlogMasonryArea = () => {
               {blog_items.map((blog) => {
                 const { id, img, desc, title, date, category, comment } = blog;
                 return (
-                  <div key={id}>
+                  (<div key={id}>
                     <div className="edu-blog blog-style-5">
                       <div className="inner">
                         <div className="thumbnail">
                           <Link href={`/blog-details/${id}`}>
-                            <a>
-                              <img src={img} alt="Blog Images" />
-                            </a>
+
+                            <img src={img} alt="Blog Images" />
+
                           </Link>
                         </div>
 
                         <div className="content position-top">
                           <div className="read-more-btn">
-                            <Link href={`/blog-details/${id}`}>
-                              <a className="btn-icon-round">
-                                <i className="icon-4"></i>
-                              </a>
+                            <Link href={`/blog-details/${id}`} className="btn-icon-round">
+
+                              <i className="icon-4"></i>
+
                             </Link>
                           </div>
                           <div className="category-wrap">
@@ -48,7 +48,7 @@ const BlogMasonryArea = () => {
                           </div>
                           <h5 className="title">
                             <Link href={`/blog-details/${id}`}>
-                              <a>{title}...</a>
+                              {title}...
                             </Link>
                           </h5>
                           <ul className="blog-meta">
@@ -64,7 +64,7 @@ const BlogMasonryArea = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>)
                 );
               })}
             </Masonry>
@@ -76,7 +76,7 @@ const BlogMasonryArea = () => {
           {/* pagination end */}
         </ul>
       </div>
-    </section>
+    </section>)
   );
 };
 

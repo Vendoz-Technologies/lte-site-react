@@ -20,7 +20,7 @@ function FeatureBox({ color, icon, content }) {
 const HeroArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="hero-banner hero-style-7">
+        (<div className="hero-banner hero-style-7">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
@@ -28,8 +28,8 @@ const HeroArea = () => {
                             <h1 className="title" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1000">A Brighter Future For Kids</h1>
                             <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                <Link href="/course-style-1">
-                                    <a className="edu-btn btn-curved">Find courses <i className="icon-4"></i></a>
+                                <Link href="/course-style-1" className="edu-btn btn-curved">
+                                    Find courses <i className="icon-4"></i>
                                 </Link>
                             </div>
                             <div className="features-list" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
@@ -41,7 +41,6 @@ const HeroArea = () => {
                     </div>
                 </div>
             </div>
-
             <div className="banner-gallery">
                 <div className="thumbnail thumbnail-1" data-sal-delay="500" data-sal="slide-up" data-sal-duration="1000">
                     <img src="/assets/images/banner/kid-3.webp" alt="Girl Image" />
@@ -98,8 +97,8 @@ const HeroArea = () => {
                     <img className="rotateit" src="/assets/images/about/shape-13.png" alt="Shape" />
                 </li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default HeroArea;

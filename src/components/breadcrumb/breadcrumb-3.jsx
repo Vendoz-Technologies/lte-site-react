@@ -6,7 +6,7 @@ import { useMouseMoveUI } from '../../contexts/mouse-move-context';
 const BreadcrumbThree = ({ title, subtitle }) => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-breadcrumb-area">
+        (<div className="edu-breadcrumb-area">
             <div className="container">
                 <div className="breadcrumb-inner">
                     <div className="page-title">
@@ -15,7 +15,7 @@ const BreadcrumbThree = ({ title, subtitle }) => {
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                            <a>Home</a>
+                            Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -55,8 +55,8 @@ const BreadcrumbThree = ({ title, subtitle }) => {
                     <img src="/assets/images/about/shape-07.png" alt="shape" />
                 </motion.li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BreadcrumbThree;

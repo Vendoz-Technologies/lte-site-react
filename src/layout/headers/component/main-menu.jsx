@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const MainMenu = () => {
     return (
-        <ul className="mainmenu">
+        (<ul className="mainmenu">
             {menu_data.map((menu, i) => (
                 <li key={i} className="has-droupdown"><a href="#">{menu.title}</a>
                     {!menu.mega_menu && 
@@ -12,11 +12,11 @@ const MainMenu = () => {
                             {menu.submenus.map((nav, i) => (
                                 <li key={i}>
                                     <Link href={`${nav.link}`}>
-                                        <a>
-                                            {nav.title}
-                                            {nav?.hot && <span className="badge-1">hot</span>}
-                                            {nav?.new && <span className="badge">new</span>}
-                                        </a>
+
+                                        {nav.title}
+                                        {nav?.hot && <span className="badge-1">hot</span>}
+                                        {nav?.new && <span className="badge">new</span>}
+
                                     </Link>
                                 </li>
                             ))}
@@ -31,7 +31,7 @@ const MainMenu = () => {
                                         {nav.mega_submenu.map((m, i) => (
                                             <li key={i}>
                                                 <Link href={`${m.link}`}>
-                                                    <a>{m.title}</a>
+                                                    {m.title}
                                                 </Link>
                                             </li>
                                         ))}
@@ -42,8 +42,8 @@ const MainMenu = () => {
                     }
                 </li>
             ))}
-        </ul>
-    )
+        </ul>)
+    );
 }
 
 export default MainMenu;

@@ -40,7 +40,7 @@ const contents = {
 
 const CategoryArea = () => {
     return (
-        <div className="edu-categorie-area categorie-area-1 edu-section-gap">
+        (<div className="edu-categorie-area categorie-area-1 edu-section-gap">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title pre-textsecondary">Categories</span>
@@ -58,9 +58,9 @@ const CategoryArea = () => {
                                 </div>
                                 <div className="content">
                                     <Link href="/course-style-1">
-                                        <a>
-                                            <h5 className="title">{category.title}</h5>
-                                        </a>
+
+                                        <h5 className="title">{category.title}</h5>
+
                                     </Link>
                                     <p>{category.text}</p>
                                     <div className="course-remain">{category.courses} Courses</div>
@@ -70,8 +70,8 @@ const CategoryArea = () => {
                     ))}
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CategoryArea;

@@ -6,7 +6,7 @@ const blog_items = blog_data.filter(blog => blog.modern_schooling_blog);
 
 const BlogArea = () => {
     return (
-        <div className="edu-blog-area blog-area-6 bg-image section-gap-equal">
+        (<div className="edu-blog-area blog-area-6 bg-image section-gap-equal">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Latest Articles</span>
@@ -17,44 +17,44 @@ const BlogArea = () => {
                     {blog_items.map((blog, i) => {
                         const { id, img, delay, date, sm_desc, title, category } = blog;
                         return (
-                            <div key={i} className="col-lg-3 col-md-6 col-12" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
+                            (<div key={i} className="col-lg-3 col-md-6 col-12" data-sal-delay={delay} data-sal="slide-up" data-sal-duration="800">
                                 <div className="edu-blog blog-style-6">
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/blog-details/${id}`}>
-                                                <a>
-                                                    <img src={img} alt="Blog Images" />
-                                                </a>
+
+                                                <img src={img} alt="Blog Images" />
+
                                             </Link>
                                             <span className="date">{date}</span>
                                         </div>
                                         <div className="content position-top">
                                             <div className="read-more-btn">
-                                                <Link href={`/blog-details/${id}`}>
-                                                    <a className="btn-icon-round"><i className="icon-4"></i></a>
+                                                <Link href={`/blog-details/${id}`} className="btn-icon-round">
+                                                    <i className="icon-4"></i>
                                                 </Link>
                                             </div>
                                             <div className="category-wrap">
-                                                <Link href={`/blog-details/${id}`}>
-                                                    <a className="blog-category">{category}</a>
+                                                <Link href={`/blog-details/${id}`} className="blog-category">
+                                                    {category}
                                                 </Link>
                                             </div>
                                             <h5 className="title">
                                                 <Link href={`/blog-details/${id}`}>
-                                                    <a>{title}</a>
+                                                    {title}
                                                 </Link>
                                             </h5>
                                             <p>{sm_desc}</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            </div>)
+                        );
                     })}
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BlogArea;

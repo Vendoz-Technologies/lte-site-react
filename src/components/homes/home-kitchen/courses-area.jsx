@@ -7,7 +7,7 @@ const courses = course_data.filter(course => course.kitchen_course);
 
 const CoursesArea = () => {
     return (
-        <div className="edu-course-area course-area-5 gap-tb-text">
+        (<div className="edu-course-area course-area-5 gap-tb-text">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title">Popular Courses</span>
@@ -35,14 +35,14 @@ const CoursesArea = () => {
                 </div>
                 <div className="course-view-all" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
                     <h5 className="view-text">Get the Most Dedicated Kitchen Course from LTE. 
-                    <Link href="/course-style-1">
-                        <a className="btn-transparent">All Courses <i className="icon-4"></i></a>
+                    <Link href="/course-style-1" className="btn-transparent">
+                        All Courses <i className="icon-4"></i>
                     </Link>
                     </h5>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CoursesArea;

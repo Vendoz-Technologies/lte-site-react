@@ -8,26 +8,26 @@ const blog_items = blog_data.filter(blog => blog.blog_list);
 
 const ListArea = () => {
     return (
-        <section className="section-gap-equal">
+        (<section className="section-gap-equal">
             <div className="container">
                 <div className="row row--30">
                     <div className="col-lg-8">
                         {blog_items.map((blog) => {
                             const { id, img, title, date, desc, comment } = blog;
                             return (
-                                <div key={id} className="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                (<div key={id} className="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/blog-details/${id}`}>
-                                                <a>
-                                                    <img src={img} alt="Blog Images" />
-                                                </a>
+
+                                                <img src={img} alt="Blog Images" />
+
                                             </Link>
                                         </div>
                                         <div className="content">
                                             <h5 className="title">
                                                 <Link href={`/blog-details/${id}`}>
-                                                    <a>{title}...</a>
+                                                    {title}...
                                                 </Link>
                                             </h5>
                                             <ul className="blog-meta">
@@ -36,14 +36,14 @@ const ListArea = () => {
                                             </ul>
                                             <p>{desc}</p>
                                             <div className="read-more-btn">
-                                                <Link href={`/blog-details/${id}`}>
-                                                    <a className="edu-btn btn-border btn-medium">Learn More <i className="icon-4"></i></a>
+                                                <Link href={`/blog-details/${id}`} className="edu-btn btn-border btn-medium">
+                                                    Learn More <i className="icon-4"></i>
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
+                                </div>)
+                            );
                         })}
 
                         <ul className="edu-pagination top-space-30 justify-content-start">
@@ -60,8 +60,8 @@ const ListArea = () => {
                     </div>
                 </div>
             </div>
-        </section>
-    )
+        </section>)
+    );
 }
 
 export default ListArea;

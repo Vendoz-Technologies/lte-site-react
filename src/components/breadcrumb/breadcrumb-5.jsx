@@ -7,19 +7,19 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
     const { title, instructor, language, rating_count } = course || {};
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-breadcrumb-area breadcrumb-style-3">
+        (<div className="edu-breadcrumb-area breadcrumb-style-3">
             <div className="container">
                 <div className="breadcrumb-inner">
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                                <a>Home</a>
+                                Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
                         <li className="breadcrumb-item">
                             <Link href="/course-style-1">
-                                <a>Courses</a>
+                                Courses
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -76,8 +76,8 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
                     <img src="/assets/images/about/shape-07.png" alt="shape" />
                 </motion.li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CourseBreadcrumb;

@@ -37,7 +37,7 @@ const Slider = () => {
     useEffect(() => setLoop(true), [])
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="hero-banner hero-style-9">
+        (<div className="hero-banner hero-style-9">
             <div className="slider">
                 <div className="container">
                     <Swiper
@@ -66,7 +66,7 @@ const Slider = () => {
                         {slider_data.map((item) => {
                             const { btn_text, id, sm_text, src, subtitle, title } = item;
                             return (
-                                <SwiperSlide key={id}>
+                                (<SwiperSlide key={id}>
                                     <div className="inner">
                                         <span className="pre-title color-primary">{subtitle}</span>
                                         <h1 className="title">
@@ -74,19 +74,19 @@ const Slider = () => {
                                         </h1>
                                         <p data-sal-delay="200">{sm_text}</p>
                                         <div className="banner-btn" data-sal-delay="400">
-                                            <Link href="/course-style-1">
-                                            <a className="edu-btn btn-secondary">{btn_text} <i className="icon-4"></i></a>
+                                            <Link href="/course-style-1" className="edu-btn btn-secondary">
+                                                {btn_text} <i className="icon-4"></i>
                                             </Link>
                                         </div>
                                     </div>
-                                </SwiperSlide>
-                            )
+                                </SwiperSlide>)
+                            );
                         })}
                     </Swiper>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default Slider;

@@ -44,14 +44,14 @@ const SingleCourseTwo = ({ course }) => {
     }
 
     return (
-        <div className="col-md-6 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+        (<div className="col-md-6 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
             <div className="edu-course course-style-1 hover-button-bg-white">
                 <div className="inner">
                     <div className="thumbnail">
                         <Link href={`/course-details/${id}`}>
-                            <a>
-                                <img src={`/assets/images/course/${img}`} alt="Course Meta" />
-                            </a>
+
+                            <img src={`/assets/images/course/${img}`} alt="Course Meta" />
+
                         </Link>
                         <div className="time-top">
                             <span className="duration"><i className="icon-61"></i>{duration}</span>
@@ -98,7 +98,7 @@ const SingleCourseTwo = ({ course }) => {
 
                         <h6 className="title">
                             <Link href={`/course-details/${id}`}>
-                                <a>{title}</a>
+                                {title}
                             </Link>
                         </h6>
 
@@ -130,8 +130,8 @@ const SingleCourseTwo = ({ course }) => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default SingleCourseTwo;

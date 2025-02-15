@@ -5,7 +5,7 @@ import { useMouseMoveUI } from "../../../contexts/mouse-move-context";
 const HeroArea = () => {
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
   return (
-    <div className="hero-banner hero-style-2 bg-image">
+    (<div className="hero-banner hero-style-2 bg-image">
       <div className="container">
         <div className="row row--45 align-items-center">
           <div className="col-lg-6">
@@ -33,10 +33,9 @@ const HeroArea = () => {
                 data-sal="slide-up"
                 data-sal-duration="1000"
               >
-                <Link href="/course-style-1">
-                  <a className="edu-btn">
-                    Find courses <i className="icon-4"></i>
-                  </a>
+                <Link href="/course-style-1" className="edu-btn">
+                  Find courses <i className="icon-4"></i>
+
                 </Link>
               </div>
             </div>
@@ -160,7 +159,7 @@ const HeroArea = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

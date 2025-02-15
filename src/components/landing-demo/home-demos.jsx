@@ -62,7 +62,7 @@ const comingSoon = [
 
 const HomeDemos = () => {
     return (
-        <div className="pv-demo-area" id="demos">
+        (<div className="pv-demo-area" id="demos">
             <div className="container-custom">
                 <div className="row">
                     <div className="col-lg-12">
@@ -77,34 +77,34 @@ const HomeDemos = () => {
                 <div className="row row--30">
                     {demos.map((demo, i) => {
                         return (
-                            <div key={i} className="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                            (<div key={i} className="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                                 <div className="single-demo">
                                     { demo.new && <span className="new-wrapper">New</span> }
                                     <div className="inner">
                                         <div className="thumbnail">
-                                            <Link href={demo.link}>
-                                                <a className="thumbnail-link" target="_blank">
-                                                    <img
-                                                        src={`/assets/images/preview/${demo.imgSrc}`}
-                                                        alt="Preview Images"
-                                                    />
-                                                </a>
+                                            <Link href={demo.link} className="thumbnail-link" target="_blank">
+
+                                                <img
+                                                    src={`/assets/images/preview/${demo.imgSrc}`}
+                                                    alt="Preview Images"
+                                                />
+
                                             </Link>
                                             <div className="hover-action">
-                                                <Link href={demo.link}>
-                                                    <a className="edu-btn btn-large" target="_blank">View Demo <i className="icon-4"></i></a>
+                                                <Link href={demo.link} className="edu-btn btn-large" target="_blank">
+                                                    View Demo <i className="icon-4"></i>
                                                 </Link>
                                             </div>
                                         </div>
                                         <h5 className="title">
-                                            <Link href={demo.link}>
-                                                <a target="_blank">{demo.title}</a>
+                                            <Link href={demo.link} target="_blank">
+                                                {demo.title}
                                             </Link>
                                         </h5>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            </div>)
+                        );
                     })}
 
                     {comingSoon.map((demo, i) => {
@@ -125,8 +125,8 @@ const HomeDemos = () => {
                     })}
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default HomeDemos;

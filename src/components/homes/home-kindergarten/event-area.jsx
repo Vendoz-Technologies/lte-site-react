@@ -9,7 +9,7 @@ const events = event_data.filter(item => item.home_7)
 const EventArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-event-area event-area-3 bg-image">
+        (<div className="edu-event-area event-area-3 bg-image">
             <div className="container edublink-animated-shape">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title pre-textsecondary">Discover Event</span>
@@ -21,14 +21,14 @@ const EventArea = () => {
                     {events.map((event) => {
                         const { id, date, event_meta, img, sm_desc, bg_style, title } = event;
                         return (
-                            <div key={id} className="col-lg-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            (<div key={id} className="col-lg-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <div className={`edu-event-list event-list-3 ${bg_style}`}>
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/event-details/${id}`}>
-                                                <a>
-                                                    <img src={img} alt="Event Images" />
-                                                </a>
+
+                                                <img src={img} alt="Event Images" />
+
                                             </Link>
                                         </div>
                                         <div className="content">
@@ -37,21 +37,23 @@ const EventArea = () => {
                                             </ul>
                                             <h4 className="title">
                                                 <Link href={`/event-details/${id}`}>
-                                                    <a>{title}</a>
+                                                    {title}
                                                 </Link>
                                             </h4>
                                             <span className="event-location"><i className="icon-40"></i>{event_meta}</span>
                                             <p>{sm_desc}</p>
                                             <div className="read-more-btn">
-                                                <Link href={`/event-details/${id}`}>
-                                                    <a className="edu-btn btn-medium curved-medium">Attend <i className="icon-4"></i></a>
+                                                <Link
+                                                    href={`/event-details/${id}`}
+                                                    className="edu-btn btn-medium curved-medium">
+                                                    Attend <i className="icon-4"></i>
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            </div>)
+                        );
                     })}
                 </div>
 
@@ -74,8 +76,8 @@ const EventArea = () => {
                     </motion.li>
                 </ul>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default EventArea;

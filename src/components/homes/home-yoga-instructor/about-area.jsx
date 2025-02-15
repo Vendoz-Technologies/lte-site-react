@@ -9,7 +9,7 @@ const lists = [
 
 const AboutArea = () => {
     return (
-        <div className="edu-section-gap edu-about-area about-style-5">
+        (<div className="edu-section-gap edu-about-area about-style-5">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title pre-textsecondary">About</span>
@@ -36,8 +36,8 @@ const AboutArea = () => {
                             <ul className="features-list">
                                 {lists.map((l, i) => <li key={i}>{l}</li>)}
                             </ul>
-                            <Link href="/about-1">
-                                <a className="edu-btn">Get Start Today <i className="icon-4"></i></a>
+                            <Link href="/about-1" className="edu-btn">
+                                Get Start Today <i className="icon-4"></i>
                             </Link>
                         </div>
                     </div>
@@ -49,8 +49,8 @@ const AboutArea = () => {
                     <img className="d-none-shape-dark" src="/assets/images/about/dark-shape-20.png" alt="Shape" />
                 </li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default AboutArea;

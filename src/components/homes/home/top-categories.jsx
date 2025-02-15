@@ -65,7 +65,7 @@ const { title, text, category_items } = category_contents;
 
 const TopCategories = () => {
     return (
-        <div className="edu-categorie-area categorie-area-2 edu-section-gap">
+        (<div className="edu-categorie-area categorie-area-2 edu-section-gap">
             <div className="container">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <h2 className="title">{title}</h2>
@@ -82,9 +82,9 @@ const TopCategories = () => {
                                 </div>
                                 <div className="content">
                                     <Link href="/course-style-1">
-                                        <a>
-                                            <h5 className="title">{item.title}</h5>
-                                        </a>
+
+                                        <h5 className="title">{item.title}</h5>
+
                                     </Link>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@ const TopCategories = () => {
                     ))}
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default TopCategories;

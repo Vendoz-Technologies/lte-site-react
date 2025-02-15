@@ -33,7 +33,7 @@ const widgets = [
 
 const FooterThree = () => {
   return (
-    <footer className="edu-footer footer-kindergarten footer-style-6">
+    (<footer className="edu-footer footer-kindergarten footer-style-6">
       <div className="footer-top">
         <div className="container">
           <div className="row g-5">
@@ -41,13 +41,13 @@ const FooterThree = () => {
               <div className="edu-footer-widget">
                 <div className="logo">
                   <Link href="/">
-                    <a>
-                      <img
-                        className="logo-dark"
-                        src="/assets/images/logo/logo-white.png"
-                        alt="Corporate Logo"
-                      />
-                    </a>
+
+                    <img
+                      className="logo-dark"
+                      src="/assets/images/logo/logo-white.png"
+                      alt="Corporate Logo"
+                    />
+
                   </Link>
                 </div>
                 <p className="description">
@@ -66,7 +66,7 @@ const FooterThree = () => {
                       {w.footer_links.map((l, i) => (
                         <li key={i}>
                           <Link href={`/${l.link}`}>
-                            <a>{l.title}</a>
+                            {l.title}
                           </Link>
                         </li>
                       ))}
@@ -116,7 +116,6 @@ const FooterThree = () => {
           </div>
         </div>
       </div>
-
       <div className="copyright-area bg-image">
         <div className="container">
           <div className="row">
@@ -131,7 +130,7 @@ const FooterThree = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer>)
   );
 };
 

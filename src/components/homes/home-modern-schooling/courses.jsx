@@ -8,7 +8,7 @@ import CourseTypeThree from '../../course/course-type-three';
 const Courses = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="home-eight-course edu-course-area course-area-8 gap-tb-text bg-image">
+        (<div className="home-eight-course edu-course-area course-area-8 gap-tb-text bg-image">
             <div className="container edublink-animated-shape">
                 <ul>
                     <li>
@@ -20,8 +20,8 @@ const Courses = () => {
                     </li>
                     <li>
                         <div className="course-view-all" data-sal-delay="150" data-sal="slide-up" data-sal-duration="1200">
-                            <Link href="/course-style-1">
-                                <a className="edu-btn">Browse more courses <i className="icon-4"></i></a>
+                            <Link href="/course-style-1" className="edu-btn">
+                                Browse more courses <i className="icon-4"></i>
                             </Link>
                         </div>
                     </li>
@@ -61,8 +61,8 @@ const Courses = () => {
                     </li>
                 </ul>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default Courses;

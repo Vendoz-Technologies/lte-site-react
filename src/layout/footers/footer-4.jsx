@@ -44,7 +44,7 @@ const { add, call, desc, email, widgets } = footer_contents;
 const FooterTwo = () => {
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
   return (
-    <footer className="edu-footer footer-light footer-for-yoga footer-style-5">
+    (<footer className="edu-footer footer-light footer-for-yoga footer-style-5">
       <div className="footer-top">
         <div className="container">
           <div className="row g-5">
@@ -88,7 +88,7 @@ const FooterTwo = () => {
                       {w.footer_links.map((l, i) => (
                         <li key={i}>
                           <Link href={`/${l.link}`}>
-                            <a>{l.title}</a>
+                            {l.title}
                           </Link>
                         </li>
                       ))}
@@ -167,7 +167,6 @@ const FooterTwo = () => {
           </motion.li>
         </ul>
       </div>
-
       <div className="copyright-area">
         <div className="container">
           <div className="row">
@@ -182,7 +181,7 @@ const FooterTwo = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer>)
   );
 };
 

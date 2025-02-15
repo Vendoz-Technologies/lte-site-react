@@ -3,14 +3,14 @@ import React from 'react';
 
 const TeamOne = ({ instructor, image_location_path='01' }) => {
     return (
-        <div className="edu-team-grid team-style-1">
+        (<div className="edu-team-grid team-style-1">
             <div className="inner">
                 <div className="thumbnail-wrap">
                     <div className="thumbnail">
                         <Link href={`/team-details/${instructor.id}`}>
-                            <a>
-                                <img src={`/assets/images/team/team-${image_location_path}/${instructor.img}`} alt="team images" />
-                            </a>
+
+                            <img src={`/assets/images/team/team-${image_location_path}/${instructor.img}`} alt="team images" />
+
                         </Link>
                     </div>
                     <ul className="team-share-info">
@@ -27,14 +27,14 @@ const TeamOne = ({ instructor, image_location_path='01' }) => {
                 <div className="content">
                     <h5 className="title">
                         <Link href={`/team-details/${instructor.id}`}>
-                            <a>{instructor.name}</a>
+                            {instructor.name}
                         </Link>
                     </h5>
                     <span className="designation">{instructor.title}</span>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default TeamOne;

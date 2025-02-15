@@ -4,7 +4,7 @@ import { shop_data } from '../../data';
 
 const ShopArea = () => {
     return (
-        <section className="shop-page-area section-gap-equal">
+        (<section className="shop-page-area section-gap-equal">
             <div className="container">
                 <div className="edu-sorting-area">
                     <div className="sorting-left">
@@ -28,27 +28,27 @@ const ShopArea = () => {
                     {shop_data.map((product) => {
                         const { id, img, delay, price, rating, title, total_rating } = product;
                         return (
-                            <div key={id} className="col-lg-3 col-md-4 col-sm-6" data-sal-delay={delay}
+                            (<div key={id} className="col-lg-3 col-md-4 col-sm-6" data-sal-delay={delay}
                                 data-sal="slide-up" data-sal-duration="800">
                                 <div className="edu-product">
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/product-details/${id}`}>
-                                                <a>
-                                                    <img src={img} alt="Shop Images" />
-                                                </a>
+
+                                                <img src={img} alt="Shop Images" />
+
                                             </Link>
                                             <div className="product-hover-info">
                                                 <ul>
                                                     <li><a href="#" role="button"><i className="icon-2"></i></a></li>
                                                     <li>
                                                         <Link href="/wishlist">
-                                                        <a><i className="icon-22"></i></a>
+                                                        <i className="icon-22"></i>
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/cart">
-                                                        <a><i className="icon-3"></i></a>
+                                                        <i className="icon-3"></i>
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -58,7 +58,7 @@ const ShopArea = () => {
                                         <div className="content">
                                             <h6 className="title">
                                                 <Link href={`/product-details/${id}`}>
-                                                    <a>{title}</a>
+                                                    {title}
                                                 </Link>
                                             </h6>
 
@@ -72,8 +72,8 @@ const ShopArea = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            </div>)
+                        );
                     })}
                 </div>
 
@@ -87,8 +87,8 @@ const ShopArea = () => {
                     <li><a href="#" aria-label="Next"><i className="icon-east"></i></a></li>
                 </ul>
             </div>
-        </section>
-    )
+        </section>)
+    );
 }
 
 export default ShopArea;

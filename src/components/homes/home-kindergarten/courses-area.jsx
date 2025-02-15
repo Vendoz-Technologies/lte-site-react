@@ -9,7 +9,7 @@ const courses = course_data.filter(course => course.kindergarten_course)
 const CoursesArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-course-area course-area-7">
+        (<div className="edu-course-area course-area-7">
             <div className="container edublink-animated-shape">
                 <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <span className="pre-title pre-textsecondary">Popular Courses</span>
@@ -20,14 +20,14 @@ const CoursesArea = () => {
                     {courses.slice(0,3).map((course) => {
                         const { id, bg_color, img, course_price, level, title, short_desc, lesson, student } = course;
                         return (
-                            <div key={id} className="col-12 col-lg-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            (<div key={id} className="col-12 col-lg-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <div className={`edu-course course-style-7 ${bg_color}`}>
                                     <div className="inner">
                                         <div className="thumbnail">
                                             <Link href={`/course-details/${id}`}>
-                                                <a>
+
                                                 <img src={`/assets/images/course/course-04/${img}`} alt="Course Meta" />
-                                                </a>
+
                                             </Link>
                                             <div className="course-price price-round">${Math.trunc(course_price)}</div>
                                         </div>
@@ -35,7 +35,7 @@ const CoursesArea = () => {
                                             <span className="course-level">{level}</span>
                                             <h5 className="title">
                                                 <Link href={`/course-details/${id}`}>
-                                                    <a>{title}</a>
+                                                    {title}
                                                 </Link>
                                             </h5>
                                             <ul className="course-meta">
@@ -46,8 +46,8 @@ const CoursesArea = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            </div>)
+                        );
                     })}
                 </div>
 
@@ -80,8 +80,8 @@ const CoursesArea = () => {
                     <img src="/assets/images/banner/icon-4.png" alt="Shape" />
                 </motion.li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default CoursesArea;

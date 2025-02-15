@@ -3,7 +3,7 @@ import React from 'react';
 
 const BreadcrumbSix = ({ title, page }) => {
     return (
-        <div className="edu-breadcrumb-area breadcrumb-style-2 bg-image bg-image--21">
+        (<div className="edu-breadcrumb-area breadcrumb-style-2 bg-image bg-image--21">
             <div className="container">
                 <div className="breadcrumb-inner">
                     <div className="page-title">
@@ -12,7 +12,7 @@ const BreadcrumbSix = ({ title, page }) => {
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
                             <Link href="/">
-                                <a>Home</a>
+                                Home
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
@@ -22,8 +22,8 @@ const BreadcrumbSix = ({ title, page }) => {
                     </ul>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default BreadcrumbSix;

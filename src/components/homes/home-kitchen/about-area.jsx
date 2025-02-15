@@ -12,7 +12,7 @@ const lists = [
 const AboutArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-section-gap edu-about-area about-style-4">
+        (<div className="edu-section-gap edu-about-area about-style-4">
             <div className="container">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-6">
@@ -63,15 +63,15 @@ const AboutArea = () => {
                                 <p>Magna aliquaenim minim veniam quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet consectetur adipisicing elit sed do eius tempor incididunt labore.</p>
                             </div>
                             <ul className="features-list"> {lists.map((l, i) => <li key={i}>{l}</li>)} </ul>
-                            <Link href="/about-1">
-                                <a className="edu-btn">Get Start Today <i className="icon-4"></i></a>
+                            <Link href="/about-1" className="edu-btn">
+                                Get Start Today <i className="icon-4"></i>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default AboutArea;

@@ -37,7 +37,7 @@ const HeroSlider = () => {
     useEffect(() => setLoop(true), [])
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="hero-banner hero-style-3 bg-image">
+        (<div className="hero-banner hero-style-3 bg-image">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
@@ -64,7 +64,7 @@ const HeroSlider = () => {
                 {slider_data.map((item) => {
                     const { btn_text, id, sm_text, src, subtitle, title } = item;
                     return (
-                        <SwiperSlide key={id}>
+                        (<SwiperSlide key={id}>
                             <img data-transform-origin='center center' src={src} className="swiper-lazy" alt="image" />
                             <div className="thumbnail-bg-content">
                                 <div className="container edublink-animated-shape">
@@ -77,8 +77,8 @@ const HeroSlider = () => {
                                                 </h1>
                                                 <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000">{sm_text}</p>
                                                 <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                                    <Link href="/course-style-1">
-                                                    <a className="edu-btn btn-secondary">{btn_text} <i className="icon-4"></i></a>
+                                                    <Link href="/course-style-1" className="edu-btn btn-secondary">
+                                                        {btn_text} <i className="icon-4"></i>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -86,8 +86,8 @@ const HeroSlider = () => {
                                     </div>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                    )
+                        </SwiperSlide>)
+                    );
                 })}
 
                 <div className="hero-slider-bg-controls">
@@ -99,7 +99,6 @@ const HeroSlider = () => {
                     </div>
                 </div>
             </Swiper>
-
             <ul className="shape-group">
                 <motion.li className="shape-1 scene" data-sal-delay="1000" data-sal="fade" data-sal-duration="1000"
                     animate={ {
@@ -121,8 +120,8 @@ const HeroSlider = () => {
                     <img src="/assets/images/others/shape-25.png" alt="Shape" />
                 </li>
             </ul>
-        </div>
-    )
+        </div>)
+    );
 }
 
 export default HeroSlider;
