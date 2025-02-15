@@ -18,8 +18,8 @@ const social_share = [
 
 const HeaderTopRight = () => {
   return (
-    (<ul className="header-info">
-      <li>
+    <ul className="header-info">
+      {/* <li>
         <Link href="/sign-in">
           Login
         </Link>
@@ -28,7 +28,7 @@ const HeaderTopRight = () => {
         <Link href="/sign-in">
           Register
         </Link>
-      </li>
+      </li> */}
       <li>
         <a href="tel:+916382262063">
           <i className="icon-phone"></i>Call: +91 638 226 2063
@@ -55,7 +55,7 @@ const HeaderTopRight = () => {
           </a>
         ))}
       </li>
-    </ul>)
+    </ul>
   );
 };
 

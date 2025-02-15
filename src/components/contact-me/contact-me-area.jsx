@@ -61,7 +61,8 @@ const ContactMeArea = () => {
                     <li>
                       <h5 className="title">Address</h5>
                       <p>
-                        Studio 76d, Riley Ford, North Michael chester, CF99 6QQ
+                        No 34, Alsa Samar, Basement Floor, 2nd Avenue, B-Block,
+                        Anna Nagar East, Chennai - 600102
                       </p>
                     </li>
                     <li>

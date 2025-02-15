@@ -4,7 +4,7 @@ import FooterSocial from "./component/footer-social";
 const footer_contents = {
   logoLight: "/assets/images/logo/logo-dark.png",
   logoDark: "/assets/images/logo/logo-white.png",
-  desc: "Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.",
+  desc: "",
   add: "No 34, Alsa Samar, Basement Floor, 2nd Avenue, B-Block, Anna Nagar East, Chennai - 600102",
   call: "+91 63822 62063",
   email: "contactus@lteacademy.in",
@@ -15,7 +15,7 @@ const footer_contents = {
       widget_title: "Online Platform",
       footer_links: [
         { link: "about-1", title: "About" },
-        { link: "course-style-1", title: "Courses" },
+        { link: "courses", title: "Courses" },
         { link: "team-1", title: "Instructor" },
         { link: "event-grid", title: "Events" },
         { link: "team-details", title: "Instructor Profile" },
@@ -43,7 +43,7 @@ const { logoDark, logoLight, desc, add, call, email, widgets } =
 
 const Footer = ({ style_2, dark_bg, home_4 }) => {
   return (
-    (<footer
+    <footer
       className={`edu-footer ${
         style_2
           ? style_2
@@ -59,7 +59,6 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
               <div className="edu-footer-widget">
                 <div className="logo">
                   <Link href={"/"}>
-
                     {!dark_bg && (
                       <>
                         {!style_2 && (
@@ -76,11 +75,9 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                         />
                       </>
                     )}
-
                   </Link>
 
                   <Link href={"/"}>
-
                     {dark_bg && (
                       <img
                         className="logo-light"
@@ -92,33 +89,10 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                         alt="Corporate Logo"
                       />
                     )}
-
                   </Link>
                 </div>
 
                 <p className="description">{desc}</p>
-                <div className="widget-information">
-                  <ul className="information-list">
-                    <li>
-                      <span>Add:</span>
-                      {add}
-                    </li>
-                    <li>
-                      <span>Call:</span>
-                      <a href="tel:+916382262063">{call}</a>
-                    </li>
-                    <li>
-                      <span>Email:</span>
-                      <a
-                        href="mailto:contactus@lteacademy.in"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        {email}
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
 
@@ -130,9 +104,7 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                     <ul className="footer-link link-hover">
                       {w.footer_links.map((l, i) => (
                         <li key={i}>
-                          <Link href={`/${l.link}`}>
-                            {l.title}
-                          </Link>
+                          <Link href={`/${l.link}`}>{l.title}</Link>
                         </li>
                       ))}
                     </ul>
@@ -145,24 +117,27 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
               <div className="edu-footer-widget">
                 <h4 className="widget-title">Contacts</h4>
                 <div className="inner">
-                  <p className="description">
-                    Enter your email address to register to our newsletter
-                    subscription
-                  </p>
-                  <div className="input-group footer-subscription-form">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your email"
-                    />
-                    <button
-                      className={`edu-btn ${
-                        dark_bg && !home_4 ? "btn-secondary" : ""
-                      } btn-medium`}
-                      type="button"
-                    >
-                      Subscribe <i className="icon-4"></i>
-                    </button>
+                  <div className="widget-information mb-4">
+                    <ul className="information-list">
+                      <li>
+                        <span>Address:</span>
+                        {add}
+                      </li>
+                      <li>
+                        <span>Call:</span>
+                        <a href="tel:+916382262063">{call}</a>
+                      </li>
+                      <li>
+                        <span>Email:</span>
+                        <a
+                          href="mailto:contactus@lteacademy.in"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          {email}
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                   <ul className="social-share icon-transparent">
                     <FooterSocial />
@@ -187,7 +162,7 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
           </div>
         </div>
       </div>
-    </footer>)
+    </footer>
   );
 };
 

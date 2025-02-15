@@ -5,7 +5,7 @@ import BlogMasonryMain from "../components/blog-masonry";
 const BlogMasonry = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Blog Masonry"} />
+      <SEO pageTitle={"Blogs / Resources"} />
       <BlogMasonryMain />
     </Wrapper>
   );

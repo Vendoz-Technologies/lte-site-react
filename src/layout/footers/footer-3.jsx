@@ -9,7 +9,7 @@ const widgets = [
     widget_title: "Online Platform",
     footer_links: [
       { link: "about-1", title: "About" },
-      { link: "course-style-1", title: "Courses" },
+      { link: "courses", title: "Courses" },
       { link: "team-1", title: "Instructor" },
       { link: "event-grid", title: "Events" },
       { link: "team-details", title: "Instructor Profile" },
@@ -33,7 +33,7 @@ const widgets = [
 
 const FooterThree = () => {
   return (
-    (<footer className="edu-footer footer-kindergarten footer-style-6">
+    <footer className="edu-footer footer-kindergarten footer-style-6">
       <div className="footer-top">
         <div className="container">
           <div className="row g-5">
@@ -41,13 +41,11 @@ const FooterThree = () => {
               <div className="edu-footer-widget">
                 <div className="logo">
                   <Link href="/">
-
                     <img
                       className="logo-dark"
                       src="/assets/images/logo/logo-white.png"
                       alt="Corporate Logo"
                     />
-
                   </Link>
                 </div>
                 <p className="description">
@@ -65,9 +63,7 @@ const FooterThree = () => {
                     <ul className="footer-link link-hover">
                       {w.footer_links.map((l, i) => (
                         <li key={i}>
-                          <Link href={`/${l.link}`}>
-                            {l.title}
-                          </Link>
+                          <Link href={`/${l.link}`}>{l.title}</Link>
                         </li>
                       ))}
                     </ul>
@@ -130,7 +126,7 @@ const FooterThree = () => {
           </div>
         </div>
       </div>
-    </footer>)
+    </footer>
   );
 };
 

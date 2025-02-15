@@ -16,7 +16,7 @@ const footer_contents = {
       widget_title: "Online Platform",
       footer_links: [
         { link: "about-1", title: "About" },
-        { link: "course-style-1", title: "Courses" },
+        { link: "courses", title: "Courses" },
         { link: "team-1", title: "Instructor" },
         { link: "event-grid", title: "Events" },
         { link: "team-details", title: "Instructor Profile" },
@@ -44,7 +44,7 @@ const { add, call, desc, email, widgets } = footer_contents;
 const FooterTwo = () => {
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
   return (
-    (<footer className="edu-footer footer-light footer-for-kitchen footer-style-4">
+    <footer className="edu-footer footer-light footer-for-kitchen footer-style-4">
       <div className="footer-top">
         <div className="container">
           <div className="row g-5">
@@ -87,9 +87,7 @@ const FooterTwo = () => {
                     <ul className="footer-link link-hover">
                       {w.footer_links.map((l, i) => (
                         <li key={i}>
-                          <Link href={`/${l.link}`}>
-                            {l.title}
-                          </Link>
+                          <Link href={`/${l.link}`}>{l.title}</Link>
                         </li>
                       ))}
                     </ul>
@@ -196,7 +194,7 @@ const FooterTwo = () => {
           </div>
         </div>
       </div>
-    </footer>)
+    </footer>
   );
 };
 
