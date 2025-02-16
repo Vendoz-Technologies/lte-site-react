@@ -54,6 +54,8 @@ const CourseTypeOne = ({ data, classes, image_location_path = "01" }) => {
         </div>
       </div>
 
+      <div className="course-hover-content-wrapper"></div>
+
       <div className="course-hover-content">
         <div className="content">
           {/* <button

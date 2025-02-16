@@ -8,28 +8,46 @@ const menu_data = [
   },
   {
     title: "Courses & Trainings",
-    link: "#",
+    link: "/courses",
     mega_menu: true,
     submenus: [
       {
         title: "Professional Training",
         mega_submenu: [
-          { title: "HR Training", link: "/about-1" },
+          {
+            title: "HR Training",
+            link: `/courses/${toKebabCase("HR Training")}`,
+          },
           {
             title: "Logistics Management Training",
-            link: "/about-2",
+            link: `/courses/${toKebabCase("Logistics Management Training")}`,
             new: true,
           },
-          { title: "Digital Marketing Training", link: "/about-3" },
+          {
+            title: "Digital Marketing Training",
+            link: `/courses/${toKebabCase("Digital Marketing Training")}`,
+          },
           {
             title: "Software Training",
-            link: "/team-1",
+            link: `#`,
             hot: true,
             submenus: [
-              { title: "Programming Languages", link: "/about-3" },
-              { title: "Accounting", link: "" },
-              { title: "Data Analytics", link: "" },
-              { title: "Business Tools", link: "" },
+              {
+                title: "Programming Languages",
+                link: `/courses/${toKebabCase("Programming Training")}`,
+              },
+              {
+                title: "Accounting",
+                link: `/courses/${toKebabCase("Accounting")}`,
+              },
+              {
+                title: "Data Analytics",
+                link: `/courses/${toKebabCase("Data Analytics")}`,
+              },
+              {
+                title: "Business Tools",
+                link: `/courses/${toKebabCase("Business Tools")}`,
+              },
             ],
           },
         ],
@@ -40,9 +58,7 @@ const menu_data = [
           {
             title: "Singapore Programs",
             description: "6-month Study and 6-month Internship Programs",
-            link: `/courses/${toKebabCase(
-              "Overseas Education and Training"
-            )}/${toKebabCase("Singapore Programs")}`,
+            link: `/courses/${toKebabCase("Singapore Programs")}`,
             hot: true,
           },
         ],
