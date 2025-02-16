@@ -1,18 +1,25 @@
-import Link from "next/link";
 import React from "react";
 
 const social_share = [
-  { link: "http://facebook.com", target: "_blank", icon: "icon-facebook" },
-  { link: "http://twitter.com", target: "_blank", icon: "icon-twitter" },
   {
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/lte-academy/",
     target: "_blank",
     icon: "icon-linkedin2",
   },
   {
-    link: "https://www.instagram.com/",
+    link: "https://www.facebook.com/people/LTE-Academy/61572397737594/",
+    target: "_blank",
+    icon: "icon-facebook",
+  },
+  {
+    link: "https://www.instagram.com/lte.chennai/",
     target: "_blank",
     icon: "icon-instagram",
+  },
+  {
+    link: "https://g.co/kgs/Fzum59F",
+    target: "_blank",
+    icon: "icon-google",
   },
 ];
 
