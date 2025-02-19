@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useMouseMoveUI } from "../../contexts/mouse-move-context";
 
 const CourseBreadcrumb = ({ course, subtitle }) => {
-  const { title, instructor, language, rating_count } = course || {};
+  const { title, instructor, language, rating_count, level } = course || {};
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
   return (
     <div className="edu-breadcrumb-area breadcrumb-style-3">
@@ -32,21 +32,7 @@ const CourseBreadcrumb = ({ course, subtitle }) => {
           </div>
           <ul className="course-meta">
             <li>
-              <i className="icon-58"></i>by {instructor}
-            </li>
-            <li>
-              <i className="icon-59"></i>
-              {language}
-            </li>
-            <li className="course-rating">
-              <div className="rating">
-                <i className="icon-23"></i>
-                <i className="icon-23"></i>
-                <i className="icon-23"></i>
-                <i className="icon-23"></i>
-                <i className="icon-23"></i>
-              </div>
-              <span className="rating-count">({rating_count} Rating)</span>
+              <span className="course-level">{level}</span>
             </li>
           </ul>
         </div>

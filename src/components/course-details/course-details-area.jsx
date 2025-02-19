@@ -7,11 +7,8 @@ const CourseDetailsArea = ({ course }) => {
     course_desc_2,
     learn_list,
     course_desc_3,
-    instructor_img,
-    instructor_title,
-    instructor_desc,
-    social_links,
-    instructor,
+    curriculum_desc,
+    course_lessons,
   } = course || {};
   return (
     <section className="edu-section-gap course-details-area">
@@ -37,15 +34,15 @@ const CourseDetailsArea = ({ course }) => {
                 <li className="nav-item" role="presentation">
                   <button
                     className="nav-link"
-                    id="instructor-tab"
+                    id="carriculam-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#instructor"
+                    data-bs-target="#carriculam"
                     type="button"
                     role="tab"
-                    aria-controls="instructor"
+                    aria-controls="carriculam"
                     aria-selected="false"
                   >
-                    Instructor
+                    Carriculam
                   </button>
                 </li>
               </ul>
@@ -75,35 +72,51 @@ const CourseDetailsArea = ({ course }) => {
 
                 <div
                   className="tab-pane fade"
-                  id="instructor"
+                  id="carriculam"
                   role="tabpanel"
-                  aria-labelledby="instructor-tab"
+                  aria-labelledby="carriculam-tab"
                 >
                   <div className="course-tab-content">
-                    <div className="course-instructor">
-                      <div className="thumbnail">
-                        <img
-                          src={`/assets/images/team/team-02/${instructor_img}`}
-                          alt="team images"
-                        />
-                      </div>
-                      <div className="author-content">
-                        <h6 className="title">{instructor}</h6>
-                        <span className="subtitle">{instructor_title}</span>
-                        <p>{instructor_desc}</p>
-                        <ul className="social-share">
-                          {social_links?.map((social, i) => (
-                            <li key={i}>
-                              <a
-                                href={social.link}
-                                target={social.target ? social.target : ""}
-                              >
-                                <i className={social.icon}></i>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                    <div className="course-curriculam">
+                      <h3 className="heading-title">Course Curriculum</h3>
+                      <p>{curriculum_desc}</p>
+                      {course_lessons.map((lesson, i) => (
+                        <div key={i} className="course-lesson">
+                          {lesson?.title && (
+                            <h5 className="title">{lesson?.title}</h5>
+                          )}
+                          {lesson?.text && <p>{lesson?.text}</p>}
+                          <ul>
+                            {lesson?.lessons?.map((list, i) => (
+                              <li key={i}>
+                                {list.title && (
+                                  <div className="text">
+                                    <i className="icon-65"></i>
+                                    {list.title}
+                                  </div>
+                                )}
+
+                                {!list?.badge_list && (
+                                  <div className="icon">
+                                    <i className={list?.icon}></i>
+                                  </div>
+                                )}
+
+                                {list?.badge_list && (
+                                  <div className="badge-list">
+                                    <span className="badge badge-primary">
+                                      {list?.question} Question
+                                    </span>
+                                    <span className="badge badge-secondary">
+                                      {list?.minutes} Minutes
+                                    </span>
+                                  </div>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>

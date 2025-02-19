@@ -45,8 +45,12 @@ const menu_data = [
                 link: `/courses/${toKebabCase("Data Analytics")}`,
               },
               {
-                title: "Business Tools",
-                link: `/courses/${toKebabCase("Business Tools")}`,
+                title: "Microsoft Office Training",
+                link: `/courses/${toKebabCase("Microsoft Office Training")}`,
+              },
+              {
+                title: "Microsoft Office Specialist",
+                link: `/courses/${toKebabCase("Microsoft Office Specialist")}`,
               },
             ],
           },

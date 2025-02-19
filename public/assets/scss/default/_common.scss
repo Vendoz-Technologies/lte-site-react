@@ -42,3 +42,18 @@
 a {
   text-decoration: none;
 }
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.course-level {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  background-color: rgba(26, 182, 157, 1);
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: inline-block;
+}

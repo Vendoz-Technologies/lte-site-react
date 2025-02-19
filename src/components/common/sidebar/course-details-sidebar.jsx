@@ -1,20 +1,11 @@
+import Link from "next/link";
 import React from "react";
 import useModal from "../../../hooks/use-modal";
-import { Books } from "../../../svg";
 import VideoModal from "../popup-modal/video-modal";
-import Link from "next/link";
 
 const CourseDetailsSidebar = ({ course, details_2 = false }) => {
-  const {
-    img,
-    certificate,
-    videoId,
-    course_price,
-    instructor,
-    duration,
-    student,
-    language,
-  } = course || {};
+  const { img, certificate, videoId, course_price, duration, level, language } =
+    course || {};
   const { isVideoOpen, setIsVideoOpen } = useModal();
   return (
     <>
@@ -45,14 +36,7 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
                   <span className="label">
                     <i className="icon-60"></i>Price:
                   </span>
-                  <span className="value price">₹{course_price}</span>
-                </li>
-
-                <li>
-                  <span className="label">
-                    <i className="icon-62"></i>Instrutor:
-                  </span>
-                  <span className="value">{instructor}</span>
+                  <span className="value price">{course_price}</span>
                 </li>
 
                 <li>
@@ -64,13 +48,6 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
 
                 <li>
                   <span className="label">
-                    <i className="icon-63"></i>Enrolled:
-                  </span>
-                  <span className="value">{student} students</span>
-                </li>
-
-                <li>
-                  <span className="label">
                     <i className="icon-59"></i>Language:
                   </span>
                   <span className="value">{language}</span>
@@ -78,9 +55,16 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
 
                 <li>
                   <span className="label">
+                    <i className="icon-59"></i>Course Level:
+                  </span>
+                  <span className="value">{level}</span>
+                </li>
+
+                <li>
+                  <span className="label">
                     <i className="icon-64"></i>Certificate:
                   </span>
-                  <span className="value">{certificate}</span>
+                  <span className="value price">{certificate}</span>
                 </li>
               </ul>
 
@@ -88,32 +72,6 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
                 <Link href="/contact-us" className="edu-btn">
                   Start Now <i className="icon-4"></i>
                 </Link>
-              </div>
-
-              <div className="share-area">
-                <h4 className="title">Share On:</h4>
-                <ul className="social-share">
-                  <li>
-                    <Link href="#">
-                      <i className="icon-facebook"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icon-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icon-linkedin2"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icon-youtube"></i>
-                    </Link>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
