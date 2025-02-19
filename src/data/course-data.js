@@ -3,6 +3,150 @@ import { toKebabCase } from "../utils/convertion-utils";
 const course_data = [
   {
     img: "course-09.jpg",
+    duration: "35 Hours",
+    course_outline: "Onsite",
+    level: "Level 1",
+    title: "Tally",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 5,999",
+    student: 0,
+    category: "Accounting",
+    short_desc:
+      "Learn the fundamentals of accounting and financial management using Tally Prime, the industry-standard accounting software.",
+    features: [],
+    language: "English",
+    certificate: "₹ 3,000",
+    videoId: "MOS_Training123",
+    course_desc:
+      "This course is designed for beginners who want to gain a strong foundation in accounting and financial management using Tally Prime. You will learn how to record transactions, manage company accounts, and generate financial reports.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in using Tally Prime for business accounting, tax compliance, and financial reporting. This course is ideal for students, business owners, and aspiring accountants.",
+    learn_list: [
+      "Understand the fundamentals of accounting and bookkeeping",
+      "Navigate and use Tally Prime for business accounting",
+      "Create and manage a Chart of Accounts (COA)",
+      "Record and maintain accounting transactions accurately",
+      "Perform banking operations within Tally Prime",
+      "Generate financial statements and management reports",
+      "Ensure data security and effective company data management",
+      "Handle Goods and Services Tax (GST) compliance in Tally",
+    ],
+    course_desc_3:
+      "This course will equip you with practical accounting skills using Tally Prime, helping you manage financial transactions efficiently and stay compliant with taxation regulations.",
+    course_lessons: [
+      {
+        title: "Level 1 - Tally Basic Essentials",
+        text: "Learn the fundamentals of accounting and how to use Tally Prime for financial management and reporting.",
+        lessons: [
+          { title: "Fundamental of Accounting" },
+          { title: "Introduction to Tally Prime" },
+          { title: "Maintaining COA - Chart of Accounting" },
+          { title: "Recording and Maintaining Accounting Transactions" },
+          { title: "Banking in Tally Prime" },
+          { title: "Generating Financial Statement and MIS Reporting" },
+          { title: "Data Securities" },
+          { title: "Company Data Management" },
+          { title: "Goods and Services Tax" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-09.jpg",
+    duration: "35 Hours",
+    course_outline: "Onsite",
+    level: "Level 2",
+    title: "Tally",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 7,999",
+    student: 0,
+    category: "Accounting",
+    short_desc:
+      "Enhance your expertise in Tally with advanced accounting and inventory management techniques for business operations.",
+    features: [],
+    language: "English",
+    certificate: "₹ 3,000",
+    videoId: "MOS_Training123",
+    course_desc:
+      "This advanced course is designed for individuals looking to master Tally ERP 9 for business accounting and inventory management. Learn about financial reporting, cost tracking, stock management, and automation techniques.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in handling advanced accounting functions, inventory tracking, and financial reporting in Tally ERP 9, making you industry-ready for real-world applications.",
+    learn_list: [
+      "Master advanced accounting concepts in Tally ERP 9",
+      "Understand financial reporting and cost tracking",
+      "Manage advanced inventory and stock control",
+      "Automate accounting processes for efficiency",
+      "Utilize technical concepts to optimize Tally operations",
+      "Ensure tax compliance and data security",
+      "Generate comprehensive MIS and business reports",
+    ],
+    course_desc_3:
+      "This course provides hands-on training in advanced Tally ERP 9 functionalities, equipping you with the skills needed to streamline business accounting and inventory processes effectively.",
+    course_lessons: [
+      {
+        title: "Level 2 - Advanced Accounting & Inventory",
+        text: "Deep dive into advanced accounting and inventory management concepts in Tally ERP 9.",
+        lessons: [
+          { title: "Advanced Accounting Concepts in Tally ERP 9" },
+          { title: "Advanced Inventory Concepts in Tally ERP 9" },
+          { title: "Technical Concepts of Tally ERP 9" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-09.jpg",
+    duration: "35 Hours",
+    course_outline: "Onsite",
+    level: "Level 3",
+    title: "Tally",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 10,999",
+    student: 0,
+    category: "Accounting",
+    short_desc:
+      "Become proficient in statutory compliance, taxation, and payroll management using Tally ERP 9.",
+    features: [],
+    language: "English",
+    certificate: "₹ 4,500",
+    videoId: "MOS_Training123",
+    course_desc:
+      "This course is designed to help professionals master statutory compliance and taxation in Tally ERP 9. Learn how to handle GST, VAT, TDS, and payroll processing for business operations.",
+    course_desc_2:
+      "By completing this course, you will gain expertise in managing taxation, generating tax reports, ensuring compliance, and handling payroll efficiently within Tally ERP 9.",
+    learn_list: [
+      "Understand payroll processing, including master creation and reporting",
+      "Manage Goods and Services Tax (GST), VAT, CST, and Excise duties",
+      "Learn tax compliance and automated tax calculations in Tally",
+      "Handle TDS processing, e-filing, and financial reporting",
+      "Generate accurate tax invoices and statutory reports",
+      "Ensure business compliance with tax regulations",
+    ],
+    course_desc_3:
+      "This advanced-level course focuses on taxation and compliance, making you an expert in handling business financials using Tally ERP 9.",
+    course_lessons: [
+      {
+        title: "Level 3 - Statutory and Taxations",
+        text: "Master taxation in Tally, including GST, VAT, TDS, and payroll processing.",
+        lessons: [
+          { title: "Payroll (Master, Voucher, Report)" },
+          {
+            title:
+              "Goods and Services Tax: VAT, CST, Excise & Services Introduction for Understanding GST",
+          },
+          {
+            title:
+              "TDS - Tax Deducted at Source (Master, Voucher, Report, and E-filing)",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-09.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -354,7 +498,7 @@ const course_data = [
           { title: "Protecting and Security" },
           { title: "Forecast & Outline" },
           { title: "Macros (Only Recording, Non-VBA)" },
-          { title: "Bonus Contents for Office 365 – Dynamic Array Functions" },
+          { title: "Bonus Contents for Office 365 - Dynamic Array Functions" },
         ],
       },
       {
@@ -458,7 +602,7 @@ const course_data = [
           { title: "Protecting and Security" },
           { title: "Forecast & Outline" },
           { title: "Macros (Only Recording, Non-VBA)" },
-          { title: "Bonus Contents for Office 365 – Dynamic Array Functions" },
+          { title: "Bonus Contents for Office 365 - Dynamic Array Functions" },
         ],
       },
       {

@@ -16,16 +16,16 @@ const menu_data = [
         mega_submenu: [
           {
             title: "HR Training",
-            link: `/courses/${toKebabCase("HR Training")}`,
+            link: `/courses`,
           },
           {
             title: "Logistics Management Training",
-            link: `/courses/${toKebabCase("Logistics Management Training")}`,
+            link: `/courses`,
             new: true,
           },
           {
             title: "Digital Marketing Training",
-            link: `/courses/${toKebabCase("Digital Marketing Training")}`,
+            link: `/courses`,
           },
           {
             title: "Software Training",
@@ -34,23 +34,23 @@ const menu_data = [
             submenus: [
               {
                 title: "Programming Languages",
-                link: `/courses/${toKebabCase("Programming Training")}`,
+                link: `/courses`,
               },
               {
                 title: "Accounting",
-                link: `/courses/${toKebabCase("Accounting")}`,
+                link: `/courses`,
               },
               {
                 title: "Data Analytics",
-                link: `/courses/${toKebabCase("Data Analytics")}`,
+                link: `/courses`,
               },
               {
                 title: "Microsoft Office Training",
-                link: `/courses/${toKebabCase("Microsoft Office Training")}`,
+                link: `/courses`,
               },
               {
                 title: "Microsoft Office Specialist",
-                link: `/courses/${toKebabCase("Microsoft Office Specialist")}`,
+                link: `/courses`,
               },
             ],
           },
@@ -62,7 +62,7 @@ const menu_data = [
           {
             title: "Singapore Programs",
             description: "6-month Study and 6-month Internship Programs",
-            link: `/courses/${toKebabCase("Singapore Programs")}`,
+            link: `/courses`,
             hot: true,
           },
         ],
