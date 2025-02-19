@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "lte-academy-site"
-  }
+    "default": "lte-academy-site",
+    "prod": "lte-academy-site"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
