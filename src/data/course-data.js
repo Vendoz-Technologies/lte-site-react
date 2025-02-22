@@ -2,6 +2,524 @@ import { toKebabCase } from "../utils/convertion-utils";
 
 const course_data = [
   {
+    img: "course-10.jpg",
+    duration: "40 Hours",
+    course_outline: "Onsite",
+    level: "Advance",
+    title: "HR Training",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 7,499",
+    student: 0,
+    category: "Human Resources",
+    sub_category: "Human Resources",
+    short_desc:
+      "This course covers core HR functions, including recruitment, payroll, performance management, and HRMS software. Learn essential skills for managing people effectively in any organization.",
+    features: [],
+    language: "English",
+    certificate: "Included",
+    videoId: "HRM_Training123",
+    course_desc:
+      "Gain expertise in core HR functions, including recruitment, payroll management, performance evaluation, and HRMS software. This course is ideal for those aspiring to build a strong career in human resource management.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in handling recruitment, payroll, performance management, and HR legal compliance. The training will equip you with practical HR skills applicable in real-world organizational settings.",
+    learn_list: [
+      "Master the fundamentals of human resource management",
+      "Understand recruitment and talent acquisition strategies",
+      "Manage payroll and compensation structures effectively",
+      "Implement performance management systems",
+      "Ensure compliance with HR legal policies and labor laws",
+      "Utilize HRMS software for HR operations automation",
+    ],
+    course_desc_3:
+      "This course provides hands-on training in HR functions and software tools, preparing you for a dynamic role in human resource management.",
+    course_lessons: [
+      {
+        title: "HRM Essentials",
+        text: "Learn the key principles of human resource management and how to apply them in an organizational setting.",
+        lessons: [
+          { title: "Recruitment & Talent Acquisition" },
+          { title: "Payroll Management & Compensation" },
+          { title: "Performance Management Systems" },
+          { title: "HR Legal Compliance and Labor Laws" },
+          { title: "HRMS Software Implementation" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-11.jpg",
+    duration: "45 Hours",
+    course_outline: "Onsite",
+    level: "Advance",
+    title: "Logistics Management Training",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 8,999",
+    student: 0,
+    category: "Logistics",
+    sub_category: "Logistics",
+    short_desc:
+      "With the global supply chain industry growing, logistics expertise is in high demand. Our Logistics Management course covers supply chain fundamentals, warehouse management systems (WMS), and inventory management.",
+    features: [],
+    language: "English",
+    certificate: "₹ 4,000",
+    videoId: "Logistics_Training123",
+    course_desc:
+      "This course provides an in-depth understanding of logistics management, including supply chain fundamentals, warehouse management, and freight forwarding. It is designed for professionals aiming to enhance their expertise in the logistics industry.",
+    course_desc_2:
+      "By the end of this course, you will gain hands-on experience in logistics technology, automation, and customs compliance, equipping you for a successful career in supply chain and logistics management.",
+    learn_list: [
+      "Understand supply chain management fundamentals",
+      "Manage warehouse operations and inventory effectively",
+      "Learn freight forwarding and global shipping processes",
+      "Explore logistics technology and automation systems",
+      "Ensure compliance with customs procedures and regulations",
+    ],
+    course_desc_3:
+      "This course is ideal for professionals and aspiring logisticians who want to develop expertise in supply chain operations, inventory control, and global trade compliance.",
+    course_lessons: [
+      {
+        title: "Logistics Management Essentials",
+        text: "Gain a strong foundation in logistics and supply chain management, including warehouse operations and shipping processes.",
+        lessons: [
+          { title: "Supply Chain Management Fundamentals" },
+          { title: "Warehouse & Inventory Management" },
+          { title: "Freight Forwarding and Shipping Processes" },
+          { title: "Logistics Technology and Automation" },
+          { title: "Customs Procedures & Compliance" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-12.jpg",
+    duration: "50 Hours",
+    course_outline: "Onsite",
+    level: "Advance",
+    title: "Digital Marketing Training",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 9,499",
+    student: 0,
+    category: "Marketing",
+    sub_category: "Marketing",
+    short_desc:
+      "Stay ahead of the curve with our comprehensive Digital Marketing course. Gain practical skills in SEO, social media marketing, content creation, and analytics.",
+    features: [],
+    language: "English",
+    certificate: "₹ 4,500",
+    videoId: "DigitalMarketing_Training123",
+    course_desc:
+      "This course provides hands-on training in key digital marketing strategies, including SEO, social media marketing, content creation, and analytics. Learn the latest tools and techniques to drive business growth online.",
+    course_desc_2:
+      "By the end of this course, you will have a solid understanding of digital marketing fundamentals, including effective content marketing, email campaigns, and paid advertising. Ideal for marketers, business owners, and entrepreneurs.",
+    learn_list: [
+      "Master the fundamentals of Search Engine Optimization (SEO)",
+      "Create and manage successful social media marketing campaigns",
+      "Develop engaging content marketing and copywriting strategies",
+      "Leverage email marketing and CRM for customer engagement",
+      "Analyze website traffic and performance using Google Analytics",
+      "Optimize digital advertising campaigns for better ROI",
+    ],
+    course_desc_3:
+      "This course equips you with the skills to develop, implement, and manage successful digital marketing strategies across multiple platforms.",
+    course_lessons: [
+      {
+        title: "Digital Marketing Essentials",
+        text: "Gain a comprehensive understanding of digital marketing, including SEO, social media, content marketing, and analytics.",
+        lessons: [
+          { title: "Search Engine Optimization (SEO)" },
+          { title: "Social Media Marketing (Facebook, Instagram, LinkedIn)" },
+          { title: "Content Marketing & Copywriting" },
+          { title: "Email Marketing & CRM Strategies" },
+          { title: "Google Analytics & Digital Advertising" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-13.jpg",
+    duration: "12 Months",
+    course_outline: "Onsite",
+    level: "Advance",
+    title: "Singapore Programs",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 1,50,000",
+    student: 0,
+    category: "Overseas Education Consultancy",
+    sub_category: "Overseas Education Consultancy",
+    short_desc:
+      "At LTE Academy, we believe in expanding horizons beyond borders. Our Overseas Educational Consultancy offers a unique program for students who wish to study and work in Singapore.",
+    features: [],
+    language: "English",
+    certificate: "Included",
+    videoId: "Overseas_Education123",
+    course_desc:
+      "With a 6-month study and 6-month internship program, students can gain valuable international experience while advancing their careers. This program is designed to help students secure a strong academic foundation while gaining hands-on industry exposure in Singapore.",
+    course_desc_2:
+      "By the end of this program, students will have the academic credentials and practical work experience needed to excel in their chosen careers, with potential job opportunities in Singapore.",
+    learn_list: [
+      "Enroll in top universities in Singapore for a 6-month academic program",
+      "Gain hands-on experience through a 6-month internship with leading companies",
+      "Receive end-to-end support for university applications and internship placements",
+      "Develop career-ready skills and international exposure",
+      "Explore job opportunities and career pathways in Singapore",
+    ],
+    course_desc_3:
+      "This program is ideal for students looking to enhance their global career prospects by studying and working in Singapore, with comprehensive support and career guidance.",
+    course_lessons: [
+      {
+        title: "Overseas Study & Internship Program",
+        text: "A structured program designed to provide both academic learning and professional work experience in Singapore.",
+        lessons: [
+          {
+            title:
+              "6-Month Study: Academic Learning in Top Singapore Universities",
+          },
+          { title: "6-Month Internship: Hands-on Industry Experience" },
+          {
+            title:
+              "Comprehensive Support: University Applications & Placements",
+          },
+          { title: "Career Guidance: Job Opportunities in Singapore" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-fullstack.jpg",
+    duration: "60 Hours",
+    course_outline: "Onsite & Online",
+    level: "Beginner to Advanced",
+    title: "Full Stack Development",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 12,999",
+    student: 0,
+    category: "Software Training",
+    sub_category: "Web Development",
+    short_desc:
+      "Master front-end and back-end technologies to become a skilled Full Stack Developer, covering HTML, CSS, JavaScript, React, Node.js, and databases.",
+    features: [],
+    language: "English",
+    certificate: "₹ 4,000",
+    videoId: "FullStack_Training123",
+    course_desc:
+      "This course is designed to help you become a proficient Full Stack Developer by covering essential front-end and back-end technologies. Learn how to build responsive web applications from scratch.",
+    course_desc_2:
+      "By the end of this course, you will be able to develop dynamic and scalable web applications, manage databases, and deploy applications to the cloud. This course is ideal for aspiring developers, entrepreneurs, and professionals looking to upskill.",
+    learn_list: [
+      "Understand the fundamentals of web development",
+      "Master HTML, CSS, and JavaScript for front-end development",
+      "Develop interactive applications using React.js",
+      "Build RESTful APIs with Node.js and Express.js",
+      "Manage databases with MongoDB and SQL",
+      "Handle authentication and user management",
+      "Deploy applications to cloud platforms",
+      "Work with version control using Git and GitHub",
+    ],
+    course_desc_3:
+      "This course equips you with the skills needed to become a job-ready Full Stack Developer, capable of working on both client-side and server-side development.",
+    course_lessons: [
+      {
+        title: "Module 1 - Front-End Development",
+        text: "Learn the core technologies of front-end development and build responsive web applications.",
+        lessons: [
+          { title: "HTML & CSS Basics" },
+          { title: "JavaScript Essentials" },
+          { title: "Responsive Web Design with Bootstrap" },
+          { title: "Introduction to React.js" },
+          { title: "State Management in React" },
+        ],
+      },
+      {
+        title: "Module 2 - Back-End Development",
+        text: "Understand server-side development and API creation with Node.js and Express.js.",
+        lessons: [
+          { title: "Introduction to Node.js" },
+          { title: "Building RESTful APIs with Express.js" },
+          { title: "Working with MongoDB & Mongoose" },
+          { title: "User Authentication & Security" },
+          { title: "Deployment & Hosting Applications" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-cloud.jpg",
+    duration: "50 Hours",
+    course_outline: "Onsite & Online",
+    level: "Beginner to Advanced",
+    title: "Cloud Computing (AWS, Azure)",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 14,999",
+    student: 0,
+    category: "Software Training",
+    sub_category: "Cloud Platforms",
+    short_desc:
+      "Gain expertise in cloud computing with hands-on training in AWS and Azure, covering infrastructure, security, and deployment strategies.",
+    features: [],
+    language: "English",
+    certificate: "₹ 5,000",
+    videoId: "Cloud_Training123",
+    course_desc:
+      "This course is designed for IT professionals and beginners who want to gain expertise in cloud computing. Learn how to work with AWS and Azure, set up cloud infrastructure, and manage cloud security and deployment.",
+    course_desc_2:
+      "By the end of this course, you will have the skills needed to deploy, manage, and secure applications on AWS and Azure, making you a valuable asset in the cloud computing industry.",
+    learn_list: [
+      "Understand cloud computing concepts and models",
+      "Set up and manage virtual machines and cloud storage",
+      "Work with AWS services such as EC2, S3, RDS, and IAM",
+      "Implement Azure services including Virtual Machines, Blob Storage, and Azure Active Directory",
+      "Secure cloud environments and manage identity access",
+      "Deploy applications using Kubernetes and Docker",
+      "Optimize cost and performance in cloud environments",
+      "Prepare for AWS and Azure certification exams",
+    ],
+    course_desc_3:
+      "This course equips you with practical cloud computing skills to deploy, manage, and secure applications on AWS and Azure, preparing you for a career in cloud technology.",
+    course_lessons: [
+      {
+        title: "Module 1 - Introduction to Cloud Computing",
+        text: "Understand the fundamentals of cloud computing, its benefits, and the differences between AWS and Azure.",
+        lessons: [
+          { title: "Cloud Computing Basics" },
+          { title: "AWS vs. Azure - Key Differences" },
+          { title: "Virtual Machines & Cloud Storage" },
+          { title: "Networking in the Cloud" },
+        ],
+      },
+      {
+        title: "Module 2 - AWS Fundamentals",
+        text: "Learn how to set up and manage AWS cloud infrastructure.",
+        lessons: [
+          { title: "AWS EC2 - Virtual Servers" },
+          { title: "S3 - Cloud Storage & Backups" },
+          { title: "IAM - Identity & Access Management" },
+          { title: "AWS Lambda & Serverless Computing" },
+          { title: "AWS Security Best Practices" },
+        ],
+      },
+      {
+        title: "Module 3 - Azure Essentials",
+        text: "Get hands-on experience with Azure services for cloud deployment and management.",
+        lessons: [
+          { title: "Azure Virtual Machines & Storage" },
+          { title: "Azure Active Directory & Security" },
+          { title: "Azure Kubernetes Service (AKS)" },
+          { title: "Deploying Web Apps in Azure" },
+          { title: "Monitoring & Cost Optimization in Azure" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-database.jpg",
+    duration: "40 Hours",
+    course_outline: "Onsite & Online",
+    level: "Beginner to Advanced",
+    title: "Database Management & SQL",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 12,999",
+    student: 0,
+    category: "Software Training",
+    sub_category: "Database Management",
+    short_desc:
+      "Master database management and SQL with hands-on training in MySQL, PostgreSQL, and Oracle, covering data modeling, queries, and optimization.",
+    features: [],
+    language: "English",
+    certificate: "₹ 4,000",
+    videoId: "DB_SQL_Training123",
+    course_desc:
+      "This course is designed for beginners and IT professionals who want to develop expertise in database management. Learn to design, manage, and optimize databases using SQL and relational database management systems.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in writing complex SQL queries, managing databases, and optimizing performance in MySQL, PostgreSQL, and Oracle.",
+    learn_list: [
+      "Understand database concepts and relational models",
+      "Work with MySQL, PostgreSQL, and Oracle databases",
+      "Write SQL queries for data retrieval and manipulation",
+      "Design and normalize database schemas",
+      "Implement indexing and query optimization",
+      "Manage users, roles, and permissions",
+      "Perform backup and recovery strategies",
+      "Integrate databases with applications",
+    ],
+    course_desc_3:
+      "This course equips you with hands-on database management and SQL skills, preparing you for careers in database administration, development, and data analysis.",
+    course_lessons: [
+      {
+        title: "Module 1 - Introduction to Databases",
+        text: "Learn the fundamentals of database management and relational models.",
+        lessons: [
+          { title: "Database Concepts & Architecture" },
+          { title: "Relational Databases & Normalization" },
+          { title: "SQL Basics - SELECT, INSERT, UPDATE, DELETE" },
+          { title: "MySQL vs. PostgreSQL vs. Oracle - Key Differences" },
+        ],
+      },
+      {
+        title: "Module 2 - Advanced SQL & Database Optimization",
+        text: "Master advanced SQL queries, indexing, and optimization techniques.",
+        lessons: [
+          { title: "Joins & Subqueries in SQL" },
+          { title: "Views, Stored Procedures, and Triggers" },
+          { title: "Indexing & Query Optimization" },
+          { title: "Transactions & Concurrency Control" },
+          { title: "Backup & Recovery Strategies" },
+        ],
+      },
+      {
+        title: "Module 3 - Database Administration & Integration",
+        text: "Learn to manage databases, configure security, and integrate with applications.",
+        lessons: [
+          { title: "User Management & Access Control" },
+          { title: "Database Security Best Practices" },
+          { title: "Connecting Databases with Applications" },
+          { title: "Data Warehousing & Big Data Integration" },
+          { title: "NoSQL Overview & Future Trends" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-mobile-app.jpg",
+    duration: "50 Hours",
+    course_outline: "Onsite & Online",
+    level: "Beginner to Advanced",
+    title: "Mobile App Development (Android & iOS)",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 15,999",
+    student: 0,
+    category: "Software Training",
+    sub_category: "Mobile Development",
+    short_desc:
+      "Learn to develop mobile applications for Android and iOS using Flutter and React Native. Gain hands-on experience in UI/UX design, API integration, and app deployment.",
+    features: [],
+    language: "English",
+    certificate: "₹ 5,000",
+    videoId: "Mobile_Dev_Training123",
+    course_desc:
+      "This course is designed for aspiring mobile app developers who want to build applications for both Android and iOS platforms. Learn app development using Flutter and React Native, master UI/UX design principles, and integrate APIs for real-world functionality.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in developing cross-platform mobile applications, implementing user authentication, and publishing apps on Google Play Store and Apple App Store.",
+    learn_list: [
+      "Understand the fundamentals of mobile app development",
+      "Develop Android and iOS apps using Flutter & React Native",
+      "Design intuitive and responsive user interfaces",
+      "Work with APIs and integrate third-party services",
+      "Implement user authentication and database management",
+      "Optimize performance and debugging techniques",
+      "Deploy apps on Google Play Store & Apple App Store",
+      "Monetize mobile applications through in-app purchases & ads",
+    ],
+    course_desc_3:
+      "This course equips you with industry-relevant skills in mobile app development, preparing you for careers as an Android, iOS, or cross-platform developer.",
+    course_lessons: [
+      {
+        title: "Module 1 - Introduction to Mobile Development",
+        text: "Understand the fundamentals of Android & iOS app development.",
+        lessons: [
+          { title: "Overview of Mobile App Development" },
+          { title: "Introduction to Flutter & React Native" },
+          { title: "Setting Up Development Environments" },
+          { title: "Understanding Mobile UI/UX Design Principles" },
+        ],
+      },
+      {
+        title: "Module 2 - Core Development & API Integration",
+        text: "Learn app architecture, state management, and backend integration.",
+        lessons: [
+          { title: "Building UI Components & Navigation" },
+          { title: "Working with REST APIs & Firebase" },
+          { title: "User Authentication & Data Storage" },
+          { title: "State Management with Provider & Redux" },
+        ],
+      },
+      {
+        title: "Module 3 - Testing, Debugging & Deployment",
+        text: "Optimize, debug, and deploy your mobile apps.",
+        lessons: [
+          { title: "Debugging & Performance Optimization" },
+          { title: "App Testing & Quality Assurance" },
+          { title: "Publishing Apps on Google Play & App Store" },
+          { title: "Monetization Strategies (Ads & In-App Purchases)" },
+        ],
+      },
+    ],
+  },
+  {
+    img: "course-cybersecurity.jpg",
+    duration: "60 Hours",
+    course_outline: "Onsite & Online",
+    level: "Beginner to Advanced",
+    title: "Cybersecurity & Ethical Hacking",
+    rating: "",
+    rating_count: 0,
+    course_price: "₹ 18,999",
+    student: 0,
+    category: "Software Training",
+    sub_category: "Ethical Hacking",
+    short_desc:
+      "Master the fundamentals of cybersecurity and ethical hacking. Learn penetration testing, network security, and vulnerability assessment to secure systems and prevent cyber threats.",
+    features: [],
+    language: "English",
+    certificate: "₹ 6,000",
+    videoId: "Cybersecurity_Training123",
+    course_desc:
+      "This course is designed for aspiring cybersecurity professionals and ethical hackers. Gain hands-on experience in penetration testing, vulnerability assessment, and network security to protect systems from cyber threats.",
+    course_desc_2:
+      "By the end of this course, you will be proficient in ethical hacking techniques, using cybersecurity tools, and implementing security measures to defend against cyberattacks.",
+    learn_list: [
+      "Understand the fundamentals of cybersecurity & ethical hacking",
+      "Learn penetration testing and vulnerability assessment",
+      "Explore network security and firewall configuration",
+      "Master cryptography and encryption techniques",
+      "Use ethical hacking tools like Metasploit & Wireshark",
+      "Perform web application security testing",
+      "Understand malware analysis & reverse engineering",
+      "Gain knowledge of security compliance & risk management",
+    ],
+    course_desc_3:
+      "This course provides you with the skills required to become a certified ethical hacker or cybersecurity analyst, helping organizations safeguard their digital assets.",
+    course_lessons: [
+      {
+        title: "Module 1 - Introduction to Cybersecurity",
+        text: "Understand cybersecurity concepts, threats, and protection methods.",
+        lessons: [
+          { title: "Introduction to Cybersecurity & Threats" },
+          { title: "Types of Cyber Attacks & Security Measures" },
+          { title: "Fundamentals of Network Security" },
+          { title: "Security Policies & Risk Management" },
+        ],
+      },
+      {
+        title: "Module 2 - Ethical Hacking & Penetration Testing",
+        text: "Learn ethical hacking techniques and security testing.",
+        lessons: [
+          { title: "Introduction to Ethical Hacking" },
+          { title: "Penetration Testing Methodology" },
+          { title: "Using Kali Linux for Security Testing" },
+          { title: "Exploiting System Vulnerabilities" },
+        ],
+      },
+      {
+        title: "Module 3 - Advanced Security & Compliance",
+        text: "Master advanced security techniques and compliance regulations.",
+        lessons: [
+          { title: "Cryptography & Data Encryption" },
+          { title: "Web Application Security & SQL Injection" },
+          { title: "Malware Analysis & Reverse Engineering" },
+          { title: "Security Certifications & Compliance (ISO, GDPR, NIST)" },
+        ],
+      },
+    ],
+  },
+  {
     img: "course-09.jpg",
     duration: "35 Hours",
     course_outline: "Onsite",
@@ -11,7 +529,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 5,999",
     student: 0,
-    category: "Accounting",
+    category: "Software Training",
+    sub_category: "Accounting",
     short_desc:
       "Learn the fundamentals of accounting and financial management using Tally Prime, the industry-standard accounting software.",
     features: [],
@@ -62,7 +581,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 7,999",
     student: 0,
-    category: "Accounting",
+    category: "Software Training",
+    sub_category: "Accounting",
     short_desc:
       "Enhance your expertise in Tally with advanced accounting and inventory management techniques for business operations.",
     features: [],
@@ -106,7 +626,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 10,999",
     student: 0,
-    category: "Accounting",
+    category: "Software Training",
+    sub_category: "Accounting",
     short_desc:
       "Become proficient in statutory compliance, taxation, and payroll management using Tally ERP 9.",
     features: [],
@@ -155,7 +676,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 9,999",
     student: 0,
-    category: "Data Analytics",
+    category: "Software Training",
+    sub_category: "Data Analytics",
     short_desc:
       "Learn the fundamentals of Tableau and master data visualization techniques for impactful business insights.",
     features: [],
@@ -208,7 +730,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 24,999",
     student: 0,
-    category: "Data Analytics",
+    category: "Software Training",
+    sub_category: "Data Analytics",
     short_desc:
       "Master Tableau from basics to advanced levels, including LOD calculations, animations, and complex data visualization techniques.",
     features: [],
@@ -258,7 +781,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 5,999",
     student: 0,
-    category: "Data Analytics",
+    category: "Software Training",
+    sub_category: "Data Analytics",
     short_desc:
       "Master the basics of Power BI to analyze and visualize data efficiently.",
     features: [],
@@ -313,7 +837,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 24,999",
     student: 0,
-    category: "Data Analytics",
+    category: "Software Training",
+    sub_category: "Data Analytics",
     short_desc:
       "Master advanced Power BI techniques, including data modeling, DAX, and cloud deployment.",
     features: [],
@@ -388,7 +913,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 4,500",
     student: 0,
-    category: "Microsoft Office Training",
+    category: "Software Training",
+    sub_category: "Microsoft Office Training",
     short_desc:
       "Learn the basics of Microsoft Excel, including essential formulas, data organization, and fundamental spreadsheet operations.",
     features: [],
@@ -436,7 +962,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 1,500",
     student: 0,
-    category: "Microsoft Office Training",
+    category: "Software Training",
+    sub_category: "Microsoft Office Training",
     short_desc:
       "Learn the fundamental skills of Microsoft Word, including document creation, formatting, tables, and templates.",
     features: [],
@@ -497,7 +1024,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 1,500",
     student: 0,
-    category: "Microsoft Office Training",
+    category: "Software Training",
+    sub_category: "Microsoft Office Training",
     short_desc:
       "Learn the essential skills to create engaging and professional presentations using Microsoft PowerPoint.",
     features: [],
@@ -541,7 +1069,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 8,000",
     student: 0,
-    category: "Microsoft Office Training",
+    category: "Software Training",
+    sub_category: "Microsoft Office Training",
     short_desc:
       "Master advanced Microsoft Excel techniques, including data analysis, automation, and dashboard creation.",
     features: [],
@@ -594,7 +1123,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 2,500",
     student: 0,
-    category: "Microsoft Office Training",
+    category: "Software Training",
+    sub_category: "Microsoft Office Training",
     short_desc:
       "Master advanced PowerPoint techniques, including AI integration, animations, and data visualization.",
     features: [],
@@ -648,7 +1178,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 4,500",
     student: 0,
-    category: "Microsoft Office Specialist",
+    category: "Software Training",
+    sub_category: "Microsoft Office Specialist",
     short_desc:
       "Master Microsoft Word from basics to advanced with hands-on training.",
     features: [],
@@ -693,7 +1224,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 7,500",
     student: 0,
-    category: "Microsoft Office Specialist",
+    category: "Software Training",
+    sub_category: "Microsoft Office Specialist",
     short_desc:
       "Advance your Microsoft Word skills with expert-level training and techniques.",
     features: [],
@@ -736,7 +1268,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 4,500",
     student: 0,
-    category: "Microsoft Office Specialist",
+    category: "Software Training",
+    sub_category: "Microsoft Office Specialist",
     short_desc:
       "Learn Excel from the ground up, covering essential spreadsheet management skills.",
     features: [],
@@ -780,7 +1313,8 @@ const course_data = [
     rating_count: 0,
     course_price: "₹ 7,500",
     student: 0,
-    category: "Microsoft Office Specialist",
+    category: "Software Training",
+    sub_category: "Microsoft Office Specialist",
     short_desc:
       "Enhance your Excel skills with expert-level functions, formulas, and automation.",
     language: "English",
