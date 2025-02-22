@@ -19,8 +19,8 @@ const ContactUsArea = () => {
                 <li>
                   <h5 className="title">Address</h5>
                   <p>
-                    No 34, Alsa Samar, Basement Floor, 2nd Avenue, B-Block, Anna
-                    Nagar East, Chennai - 600102
+                    B-7, Alsa Samar, Plot 102, Basement Floor, 2nd Avenue,
+                    B-Block, Anna Nagar East, Chennai-600102
                   </p>
                 </li>
                 <li>
