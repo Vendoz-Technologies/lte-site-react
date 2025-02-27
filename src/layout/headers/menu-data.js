@@ -15,42 +15,42 @@ const menu_data = [
         title: "Professional Training",
         mega_submenu: [
           {
-            title: "HR Training",
-            link: `/courses`,
+            title: "Human Resource Training",
+            link: `/courses/${toKebabCase("Human Resource Training")}`,
           },
           {
             title: "Logistics Management Training",
-            link: `/courses`,
+            link: `/courses/${toKebabCase("Logistics Management Training")}`,
             new: true,
           },
           {
             title: "Digital Marketing Training",
-            link: `/courses`,
+            link: `/courses/${toKebabCase("Digital Marketing Training")}`,
           },
           {
-            title: "Software Training",
+            title: "Technology Training",
             link: `#`,
             hot: true,
             submenus: [
               {
-                title: "Programming Languages",
-                link: `/courses`,
+                title: "Software Development",
+                link: `/courses/${toKebabCase("Software Development")}`,
               },
               {
                 title: "Accounting",
-                link: `/courses`,
+                link: `/courses/${toKebabCase("Accounting")}`,
               },
               {
                 title: "Data Analytics",
-                link: `/courses`,
+                link: `/courses/${toKebabCase("Data Analytics")}`,
               },
               {
                 title: "Microsoft Office Training",
-                link: `/courses`,
+                link: `/courses/${toKebabCase("Microsoft Office Training")}`,
               },
               {
                 title: "Microsoft Office Specialist",
-                link: `/courses`,
+                link: `/courses/${toKebabCase("Microsoft Office Specialist")}`,
               },
             ],
           },
@@ -62,7 +62,9 @@ const menu_data = [
           {
             title: "Singapore Programs",
             description: "6-month Study and 6-month Internship Programs",
-            link: `/courses`,
+            link: `/courses/${toKebabCase(
+              "Overseas Education and Training"
+            )}/${toKebabCase("Singapore Programs")}`,
             hot: true,
           },
         ],
