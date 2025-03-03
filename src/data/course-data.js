@@ -2,12 +2,12 @@ import { toKebabCase } from "../utils/convertion-utils";
 
 const course_data = [
   {
-    img: "course-10.jpg",
+    img: "human-resouce-training.jpg",
     duration: "40 Hours",
     course_outline: "Onsite",
     level: "Beginner to Advanced",
     title: "Human Resource Training",
-    link: "/human-resouce-training",
+    link: "human-resouce-training",
     rating: "",
     rating_count: 0,
     course_price: "₹ 7,499",
@@ -49,12 +49,12 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "placeholder.jpg",
     duration: "45 Hours",
     course_outline: "Onsite",
     level: "Beginner to Advanced",
     title: "Logistics Management Training",
-    link: "/logistics-management-training",
+    link: "logistics-management-training",
     rating: "",
     rating_count: 0,
     course_price: "₹ 8,999",
@@ -95,12 +95,12 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "digital-marketing-training.jpg",
     duration: "50 Hours",
     course_outline: "Onsite",
     level: "Beginner to Advanced",
     title: "Digital Marketing Training",
-    link: "/digital-marketing-training",
+    link: "digital-marketing-training",
     rating: "",
     rating_count: 0,
     course_price: "₹ 9,499",
@@ -142,7 +142,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "full-stack-development.jpg",
     duration: "60 Hours",
     course_outline: "Onsite & Online",
     level: "Beginner to Advanced",
@@ -202,12 +202,12 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "placeholder.jpg",
     duration: "50 Hours",
     course_outline: "Onsite & Online",
     level: "Beginner to Advanced",
     title: "Cloud Computing (AWS, Azure)",
-    link: "/cloud-computing",
+    link: "cloud-computing",
     rating: "",
     rating_count: 0,
     course_price: "₹ 14,999",
@@ -272,7 +272,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "placeholder.jpg",
     duration: "40 Hours",
     course_outline: "Onsite & Online",
     level: "Beginner to Advanced",
@@ -342,7 +342,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "mobile-app-development.jpg",
     duration: "50 Hours",
     course_outline: "Onsite & Online",
     level: "Beginner to Advanced",
@@ -410,7 +410,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "placeholder.jpg",
     duration: "60 Hours",
     course_outline: "Onsite & Online",
     level: "Beginner to Advanced",
@@ -478,7 +478,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "tally-level-1.jpg",
     duration: "35 Hours",
     course_outline: "Onsite",
     level: "Level 1",
@@ -532,7 +532,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "tally-level-1.jpg",
     duration: "35 Hours",
     course_outline: "Onsite",
     level: "Level 2",
@@ -579,7 +579,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "tally-level-1.jpg",
     duration: "35 Hours",
     course_outline: "Onsite",
     level: "Level 3",
@@ -631,7 +631,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "tableau.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -687,7 +687,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "tableau.jpg",
     duration: "30 Hours",
     course_outline: "Onsite",
     level: "Basic to Advance",
@@ -740,7 +740,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "power-bi.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -798,7 +798,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "power-bi.jpg",
     duration: "30 Hours",
     course_outline: "Onsite",
     level: "Basic to Advance",
@@ -876,7 +876,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "ms-excel.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -927,7 +927,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "ms-word.jpg",
     duration: "7 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -991,7 +991,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "ms-powerpoint.jpg",
     duration: "3 Hours",
     course_outline: "Onsite",
     level: "Basic",
@@ -1038,7 +1038,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "ms-excel.jpg",
     duration: "15 Hours",
     course_outline: "Onsite",
     level: "Advance",
@@ -1094,7 +1094,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "ms-powerpoint.jpg",
     duration: "5 Hours",
     course_outline: "Onsite",
     level: "Advance",
@@ -1151,7 +1151,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "mos-word.jpg",
     duration: "6 Hours",
     course_outline: "Onsite",
     level: "Associate",
@@ -1199,7 +1199,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "mos-word.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Expert",
@@ -1245,7 +1245,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "mos-excel.jpg",
     duration: "6 Hours",
     course_outline: "Onsite",
     level: "Associate",
@@ -1292,7 +1292,7 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "mos-excel.jpg",
     duration: "10 Hours",
     course_outline: "Onsite",
     level: "Expert",
@@ -1337,12 +1337,12 @@ const course_data = [
     ],
   },
   {
-    img: "course-10.jpg",
+    img: "singapore-program.jpg",
     duration: "12 Months",
     course_outline: "Onsite",
     level: "Advance",
     title: "Singapore Programs",
-    link: "/singapore-programs",
+    link: "singapore-programs",
     rating: "",
     rating_count: 0,
     course_price: "₹ 1,50,000",

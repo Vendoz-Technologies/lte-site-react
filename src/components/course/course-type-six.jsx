@@ -6,9 +6,9 @@ const CourseTypeSix = ({ course, classes }) => {
     <div className={`edu-course course-style-3 ${classes ? classes : ""}`}>
       <div className="inner">
         <div className="thumbnail">
-          <Link href={`/course-details/${course.id}`}>
+          <Link href={`/course-details/${course.link}`}>
             <img
-              src={`/assets/images/course/course-04/${course.img}`}
+              src={`/assets/images/courses/${course.img}`}
               alt="Course Meta"
             />
           </Link>
@@ -23,7 +23,7 @@ const CourseTypeSix = ({ course, classes }) => {
         <div className="content">
           <span className="course-level">{course.level}</span>
           <h5 className="title">
-            <Link href={`/course-details/${course.id}`}>{course.title}</Link>
+            <Link href={`/course-details/${course.link}`}>{course.title}</Link>
           </h5>
           <p>{course.short_desc}</p>
         </div>

@@ -65,27 +65,6 @@ const HeroArea = () => {
               >
                 <img src="/assets/images/banner/girl-1.webp" alt="Girl Image" />
               </div>
-              <div
-                className="instructor-info"
-                data-sal-delay="600"
-                data-sal="slide-up"
-                data-sal-duration="1000"
-              >
-                <div className="inner">
-                  <h5 className="title">Instructor</h5>
-                  <div className="media">
-                    <div className="thumb">
-                      <img
-                        src="/assets/images/banner/author-1.png"
-                        alt="Images"
-                      />
-                    </div>
-                    <div className="content">
-                      <span>200+</span> Instructors
-                    </div>
-                  </div>
-                </div>
-              </div>
               <ul className="shape-group">
                 <li
                   className="shape-1"
