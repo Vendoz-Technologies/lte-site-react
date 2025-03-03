@@ -62,9 +62,7 @@ const menu_data = [
           {
             title: "Singapore Programs",
             description: "6-month Study and 6-month Internship Programs",
-            link: `/courses/${toKebabCase(
-              "Overseas Education and Training"
-            )}/${toKebabCase("Singapore Programs")}`,
+            link: `/courses/${toKebabCase("Singapore Programs")}`,
             hot: true,
           },
         ],
