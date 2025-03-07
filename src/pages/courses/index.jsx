@@ -1,8 +1,8 @@
+import CourseStyleOneMain from "../../components/course-style-1";
 import SEO from "../../components/seo";
 import { Wrapper } from "../../layout";
-import CourseStyleOneMain from "../../components/course-style-1";
 
-const CourseStyleOne = () => {
+const Courses = () => {
   return (
     <Wrapper>
       <SEO pageTitle={"Courses"} />
@@ -11,4 +11,4 @@ const CourseStyleOne = () => {
   );
 };
 
-export default CourseStyleOne;
+export default Courses;

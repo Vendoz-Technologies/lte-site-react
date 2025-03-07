@@ -21,7 +21,7 @@ const AboutArea = () => {
               <div className="about-image-gallery">
                 <img
                   className="main-img-1"
-                  src="/assets/images/about/about-01.webp"
+                  src="/assets/images/about/about-01.jpg"
                   alt="About Image"
                 />
                 <div

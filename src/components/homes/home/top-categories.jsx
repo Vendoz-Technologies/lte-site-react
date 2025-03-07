@@ -77,7 +77,7 @@ const TopCategories = () => {
                   <i className={item.icon}></i>
                 </div>
                 <div className="content">
-                  <Link href={`/categories/${toKebabCase(item.title)}`}>
+                  <Link href={`/courses/${toKebabCase(item.title)}`}>
                     <h5 className="title">{item.title}</h5>
                   </Link>
                 </div>

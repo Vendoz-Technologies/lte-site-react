@@ -15,8 +15,8 @@ const menu_data = [
         title: "Professional Training",
         mega_submenu: [
           {
-            title: "HR Training",
-            link: `/courses`,
+            title: "Human Resource Training",
+            link: `/courses/${toKebabCase("Human Resource Training")}`,
           },
           {
             title: "Logistics Management Training",
@@ -28,13 +28,13 @@ const menu_data = [
             link: `/courses`,
           },
           {
-            title: "Software Training",
+            title: "Technology Training",
             link: `#`,
             hot: true,
             submenus: [
               {
-                title: "Programming Languages",
-                link: `/courses`,
+                title: "Software Development",
+                link: `/courses/${toKebabCase("Software Development")}`,
               },
               {
                 title: "Accounting",

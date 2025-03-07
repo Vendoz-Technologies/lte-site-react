@@ -5,7 +5,7 @@ const footer_contents = {
   logoLight: "/assets/images/logo/logo-dark.png",
   logoDark: "/assets/images/logo/logo-white.png",
   desc: "",
-  add: "No 34, Alsa Samar, Basement Floor, 2nd Avenue, B-Block, Anna Nagar East, Chennai - 600102",
+  add: "B-7, Alsa Samar, Plot 102, Basement Floor, 2nd Avenue, B-Block, Anna Nagar East, Chennai-600102",
   call: "+91 63822 62063",
   email: "contactus@lteacademy.in",
   widgets: [
