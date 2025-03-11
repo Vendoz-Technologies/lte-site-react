@@ -177,6 +177,14 @@
           padding: 20px 0 0 70px;
         }
       }
+
+      .mega-sub-menu-01 > li > ul > li > ul {
+        display: none;
+      }
+
+      .mega-sub-menu-01 > li > ul > li:hover > ul {
+        display: block;
+      }
     }
   }
 }
