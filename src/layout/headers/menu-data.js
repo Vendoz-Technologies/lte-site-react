@@ -69,11 +69,11 @@ const menu_data = [
       },
     ],
   },
-  {
-    title: "Blogs / Resources",
-    link: "/blogs",
-    mega_menu: false,
-  },
+  // {
+  //   title: "Blogs / Resources",
+  //   link: "/blogs",
+  //   mega_menu: false,
+  // },
   {
     title: "FAQ",
     link: "/faq",

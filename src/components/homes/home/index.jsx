@@ -22,10 +22,10 @@ const index = () => {
         <AboutArea />
         <CourseArea />
         <CounterUpArea />
-        <TestimonialArea />
+        {/* <TestimonialArea /> */}
         <CtaArea />
         <AdBanner />
-        <BlogArea />
+        {/* <BlogArea /> */}
         <Footer />
       </div>
     </div>
