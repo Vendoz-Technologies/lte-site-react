@@ -1,7 +1,8 @@
 {
   "projects": {
-    "default": "lte-academy-site",
-    "prod": "lte-academy-site"
+    "default": "lte-academy-dev",
+    "prod": "lte-academy",
+    "dev": "lte-academy-dev"
   },
   "targets": {},
   "etags": {},
