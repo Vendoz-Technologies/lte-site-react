@@ -24,6 +24,7 @@ const BlogDetailsArea = ({ blog }) => {
                 </ul>
                 <div className="thumbnail">
                   <img
+                    loading="lazy"
                     src="/assets/images/blog/blog-large-1.jpg"
                     alt="Blog Image"
                   />
@@ -74,6 +75,7 @@ const BlogDetailsArea = ({ blog }) => {
                   <div className="col-6">
                     <div className="thumb">
                       <img
+                        loading="lazy"
                         src="/assets/images/blog/features-1.jpg"
                         alt="Features Images"
                       />
@@ -82,6 +84,7 @@ const BlogDetailsArea = ({ blog }) => {
                   <div className="col-6">
                     <div className="thumb">
                       <img
+                        loading="lazy"
                         src="/assets/images/blog/features-2.jpg"
                         alt="Features Images"
                       />
@@ -163,6 +166,7 @@ const BlogDetailsArea = ({ blog }) => {
             <div className="blog-author">
               <div className="thumbnail">
                 <img
+                  loading="lazy"
                   src="/assets/images/blog/author-01.jpg"
                   alt="Author Images"
                 />

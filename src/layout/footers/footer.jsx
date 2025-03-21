@@ -48,12 +48,14 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                       <>
                         {!style_2 && (
                           <img
+                            loading="lazy"
                             className="logo-light"
                             src={logoLight}
                             alt="Corporate Logo"
                           />
                         )}
                         <img
+                          loading="lazy"
                           className="logo-dark"
                           src={logoDark}
                           alt="Corporate Logo"
@@ -65,6 +67,7 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                   <Link href={"/"}>
                     {dark_bg && (
                       <img
+                        loading="lazy"
                         className="logo-light"
                         src={
                           home_4

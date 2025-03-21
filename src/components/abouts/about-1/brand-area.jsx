@@ -20,7 +20,7 @@ const BrandArea = ({ about_p_2 }) => {
         <div className="brand-grid-wrap brand-style-2">
           {brands.map((img, i) => (
             <div key={i} className="brand-grid">
-              <img src={img} alt="Brand Logo" />
+              <img loading="lazy" src={img} alt="Brand Logo" />
             </div>
           ))}
         </div>

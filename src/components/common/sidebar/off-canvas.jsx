@@ -20,12 +20,14 @@ const OffCanvas = ({ isOpen, setIsOpen }) => {
             <div className="logo">
               <Link href="/">
                 <img
+                  loading="lazy"
                   className="logo-light"
                   src="/assets/images/logo/logo-white.png"
                   alt="logo"
                   style={{ height: "120px" }}
                 />
                 <img
+                  loading="lazy"
                   className="logo-dark"
                   src="/assets/images/logo/logo-dark.png"
                   alt="logo"

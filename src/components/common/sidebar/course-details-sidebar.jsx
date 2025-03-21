@@ -17,7 +17,11 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
         <div className="edu-course-widget widget-course-summery">
           <div className="inner">
             <div className="thumbnail">
-              <img src={`/assets/images/courses/${img}`} alt="Course Thumb" />
+              <img
+                loading="lazy"
+                src={`/assets/images/courses/${img}`}
+                alt="Course Thumb"
+              />
               <a
                 onClick={() => setIsVideoOpen(true)}
                 style={{ cursor: "pointer" }}

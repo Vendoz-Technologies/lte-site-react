@@ -37,7 +37,11 @@ const CtaArea = () => {
                     y: mouseReverse(50).y,
                   }}
                 >
-                  <img src="/assets/images/cta/shape-06.png" alt="shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/cta/shape-06.png"
+                    alt="shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-02 scene"
@@ -46,7 +50,11 @@ const CtaArea = () => {
                     y: mouseDirection(50).y,
                   }}
                 >
-                  <img src="/assets/images/cta/shape-12.png" alt="shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/cta/shape-12.png"
+                    alt="shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-03 scene"
@@ -55,7 +63,11 @@ const CtaArea = () => {
                     y: mouseDirection(50).y,
                   }}
                 >
-                  <img src="/assets/images/cta/shape-04.png" alt="shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/cta/shape-04.png"
+                    alt="shape"
+                  />
                 </motion.li>
               </ul>
             </div>

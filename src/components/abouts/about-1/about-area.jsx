@@ -59,11 +59,13 @@ const AboutArea = () => {
           <div className="col-lg-7">
             <div className="about-image-gallery">
               <img
+                loading="lazy"
                 className="main-img-1"
                 src="/assets/images/about/about-11.webp"
                 alt="About Image"
               />
               <img
+                loading="lazy"
                 className="main-img-2"
                 src="/assets/images/about/about-12.webp"
                 data-sal-delay="150"
@@ -82,7 +84,11 @@ const AboutArea = () => {
                     y: mouseReverse(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-38.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-38.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-2 scene"
@@ -94,7 +100,11 @@ const AboutArea = () => {
                     y: mouseDirection(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-37.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-37.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-3 scene"
@@ -106,7 +116,11 @@ const AboutArea = () => {
                     y: mouseDirection(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-04.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-04.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <li
                   className="shape-4 scene"
@@ -115,6 +129,7 @@ const AboutArea = () => {
                   data-sal-duration="200"
                 >
                   <img
+                    loading="lazy"
                     src="/assets/images/counterup/shape-02.png"
                     alt="Shape"
                   />

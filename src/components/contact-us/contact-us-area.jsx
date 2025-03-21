@@ -68,7 +68,11 @@ const ContactUsArea = () => {
                     y: mouseReverse(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-13.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-13.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-2 scene"
@@ -78,6 +82,7 @@ const ContactUsArea = () => {
                   }}
                 >
                   <img
+                    loading="lazy"
                     src="/assets/images/counterup/shape-02.png"
                     alt="Shape"
                   />

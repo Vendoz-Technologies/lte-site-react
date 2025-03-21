@@ -11,7 +11,11 @@ const CourseTypeOne = ({ data, classes, image_location_path = "01" }) => {
       <div className="inner">
         <div className="thumbnail">
           <Link href={`/courses/${data.id}`}>
-            <img src={`/assets/images/courses/${data.img}`} alt="Course Meta" />
+            <img
+              loading="lazy"
+              src={`/assets/images/courses/${data.img}`}
+              alt="Course Meta"
+            />
           </Link>
           <div className="time-top">
             <span className="duration">

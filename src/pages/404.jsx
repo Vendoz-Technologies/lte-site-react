@@ -16,7 +16,11 @@ const ErrorPage = () => {
         <div className="container">
           <div className="edu-error">
             <div className="thumbnail">
-              <img src="/assets/images/others/404.png" alt="404 Error" />
+              <img
+                loading="lazy"
+                src="/assets/images/others/404.png"
+                alt="404 Error"
+              />
               <ul className="shape-group">
                 <motion.li
                   className="shape-1 scene"
@@ -25,7 +29,11 @@ const ErrorPage = () => {
                     y: mouseReverse(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-25.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-25.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-2 scene"
@@ -34,7 +42,11 @@ const ErrorPage = () => {
                     y: mouseDirection(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-15.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-15.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-3 scene"
@@ -43,7 +55,11 @@ const ErrorPage = () => {
                     y: mouseReverse(30).y,
                   }}
                 >
-                  <img src="/assets/images/about/shape-13.png" alt="Shape" />
+                  <img
+                    loading="lazy"
+                    src="/assets/images/about/shape-13.png"
+                    alt="Shape"
+                  />
                 </motion.li>
                 <motion.li
                   className="shape-4 scene"
@@ -53,6 +69,7 @@ const ErrorPage = () => {
                   }}
                 >
                   <img
+                    loading="lazy"
                     src="/assets/images/counterup/shape-02.png"
                     alt="Shape"
                   />
@@ -72,7 +89,11 @@ const ErrorPage = () => {
         </div>
         <ul className="shape-group">
           <li className="shape-1">
-            <img src="/assets/images/others/map-shape-2.png" alt="Shape" />
+            <img
+              loading="lazy"
+              src="/assets/images/others/map-shape-2.png"
+              alt="Shape"
+            />
           </li>
         </ul>
       </section>

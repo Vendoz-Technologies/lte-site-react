@@ -27,7 +27,7 @@ const BlogMasonryArea = () => {
                       <div className="inner">
                         <div className="thumbnail">
                           <Link href={`/blog-details/${id}`}>
-                            <img src={img} alt="Blog Images" />
+                            <img loading="lazy" src={img} alt="Blog Images" />
                           </Link>
                         </div>
 

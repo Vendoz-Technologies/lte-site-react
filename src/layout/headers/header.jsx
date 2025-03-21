@@ -44,12 +44,14 @@ const Header = ({ header_style, no_top_bar, disable_full_width }) => {
                 <div className="logo">
                   <Link href={"/"}>
                     <img
+                      loading="lazy"
                       className="logo-light"
                       src="/assets/images/logo/logo-white.png"
                       alt="logo"
                       style={{ height: "120px" }}
                     />
                     <img
+                      loading="lazy"
                       className="logo-dark"
                       src="/assets/images/logo/logo-dark.png"
                       alt="logo"

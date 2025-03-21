@@ -36,7 +36,11 @@ const BreadcrumbThree = ({ title, subtitle }) => {
             y: mouseReverse(40).y,
           }}
         >
-          <img src="/assets/images/about/shape-13.png" alt="shape" />
+          <img
+            loading="lazy"
+            src="/assets/images/about/shape-13.png"
+            alt="shape"
+          />
         </motion.li>
         <motion.li
           className="shape-3 scene"
@@ -45,7 +49,11 @@ const BreadcrumbThree = ({ title, subtitle }) => {
             y: mouseDirection(40).y,
           }}
         >
-          <img src="/assets/images/about/shape-15.png" alt="shape" />
+          <img
+            loading="lazy"
+            src="/assets/images/about/shape-15.png"
+            alt="shape"
+          />
         </motion.li>
         <li className="shape-4">
           <span></span>
@@ -57,7 +65,11 @@ const BreadcrumbThree = ({ title, subtitle }) => {
             y: mouseReverse(40).y,
           }}
         >
-          <img src="/assets/images/about/shape-07.png" alt="shape" />
+          <img
+            loading="lazy"
+            src="/assets/images/about/shape-07.png"
+            alt="shape"
+          />
         </motion.li>
       </ul>
     </div>

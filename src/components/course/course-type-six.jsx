@@ -8,6 +8,7 @@ const CourseTypeSix = ({ course, classes }) => {
         <div className="thumbnail">
           <Link href={`/courses/${course.id}`}>
             <img
+              loading="lazy"
               src={`/assets/images/courses/${course.img}`}
               alt="Course Meta"
             />

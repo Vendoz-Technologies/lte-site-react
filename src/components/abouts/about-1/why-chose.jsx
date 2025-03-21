@@ -85,7 +85,11 @@ const WhyChose = () => {
             y: mouseDirection(30).y,
           }}
         >
-          <img src="/assets/images/about/shape-13.png" alt="shape" />
+          <img
+            loading="lazy"
+            src="/assets/images/about/shape-13.png"
+            alt="shape"
+          />
         </motion.li>
         <motion.li
           className="shape-3 scene"
@@ -109,7 +113,11 @@ const WhyChose = () => {
             y: mouseReverse(30).y,
           }}
         >
-          <img src="/assets/images/about/shape-40.png" alt="shape" />
+          <img
+            loading="lazy"
+            src="/assets/images/about/shape-40.png"
+            alt="shape"
+          />
         </motion.li>
       </ul>
     </section>

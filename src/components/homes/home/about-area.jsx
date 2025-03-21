@@ -20,6 +20,7 @@ const AboutArea = () => {
             <div className="col-lg-6">
               <div className="about-image-gallery">
                 <img
+                  loading="lazy"
                   className="main-img-1"
                   src="/assets/images/about/about-01.jpg"
                   alt="About Image"
@@ -33,6 +34,7 @@ const AboutArea = () => {
                   <div className="inner">
                     <div className="thumb">
                       <img
+                        loading="lazy"
                         src="/assets/images/about/about-02.webp"
                         alt="About Image"
                       />
@@ -71,7 +73,11 @@ const AboutArea = () => {
                       y: mouseReverse(25).y,
                     }}
                   >
-                    <img src="/assets/images/about/shape-36.png" alt="Shape" />
+                    <img
+                      loading="lazy"
+                      src="/assets/images/about/shape-36.png"
+                      alt="Shape"
+                    />
                   </motion.li>
                   <motion.li
                     className="shape-2 scene"
@@ -83,7 +89,11 @@ const AboutArea = () => {
                       y: mouseDirection(25).y,
                     }}
                   >
-                    <img src="/assets/images/about/shape-37.png" alt="Shape" />
+                    <img
+                      loading="lazy"
+                      src="/assets/images/about/shape-37.png"
+                      alt="Shape"
+                    />
                   </motion.li>
                   <motion.li
                     className="shape-3 scene"
@@ -95,7 +105,11 @@ const AboutArea = () => {
                       y: mouseReverse(25).y,
                     }}
                   >
-                    <img src="/assets/images/about/shape-02.png" alt="Shape" />
+                    <img
+                      loading="lazy"
+                      src="/assets/images/about/shape-02.png"
+                      alt="Shape"
+                    />
                   </motion.li>
                 </ul>
               </div>
